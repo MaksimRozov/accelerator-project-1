@@ -1,0 +1,37 @@
+.card-features p:first-child {
+  margin: 0;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 100%;
+  background: linear-gradient(129deg, #d10a42 0%, #0041ca 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+
+  span {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 143%;
+    display: block;
+    text-align: center;
+  }
+}
+
+.card-features {
+  text-align: center;
+
+  h3 {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 111%;
+    color: #102654;
+  }
+
+  p {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 157%;
+    text-align: center;
+    color: #102654;
+  }
+}

@@ -2,15 +2,15 @@
 @import "vendor/normalize";
 
 /* GLOBAL */
-@import "global/page";
-@import "global/visually-hidden";
 @import "global/variables";
 @import "global/mixin";
 @import "global/fonts";
+@import "global/page";
+@import "global/visually-hidden";
 @import "global/container-page";
+@import "global/common";
 
 /* BLOCKS */
-@import "blocks/normalize";
 @import "blocks/main-header";
 @import "blocks/hero";
 @import "blocks/button";

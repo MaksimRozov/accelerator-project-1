@@ -1,0 +1,19 @@
+.about__title {
+  @include main-title;
+}
+
+.about__description {
+  font-size: 18px;
+  line-height: 111%;
+  margin: 0;
+}
+
+.about__text {
+  margin: 0;
+}
+
+.about {
+  .about__title {
+    text-align: left;
+  }
+}

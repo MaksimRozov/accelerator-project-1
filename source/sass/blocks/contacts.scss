@@ -1,0 +1,19 @@
+.contacts__title {
+  @include main-title;
+}
+
+.contacts__item-title {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 100%;
+  color: #102654;
+  margin: 0;
+}
+
+.contacts__item-text {
+  font-size: 14px;
+  line-height: 143%;
+  color: #102654;
+  text-decoration: none;
+  margin: 0;
+}

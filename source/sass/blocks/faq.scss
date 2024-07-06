@@ -1,0 +1,28 @@
+.faq__title {
+  @include main-title;
+}
+
+.faq__group-button {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.faq__button {
+  border: 1px solid rgba(16, 38, 84, 0.2);
+  font-family: $primary-font;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  text-align: center;
+  color: #102654;
+  background: none;
+  padding: 14px 22px;
+  width: 140px;
+  box-sizing: border-box;
+
+  &--active {
+    background: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
+    color: #ffffff;
+  }
+}

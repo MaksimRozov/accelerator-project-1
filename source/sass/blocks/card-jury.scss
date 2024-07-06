@@ -1,0 +1,14 @@
+.card-jury {
+  position: relative;
+}
+
+.card-jury__title {
+  position: absolute;
+  font-size: 22px;
+  line-height: 100%;
+  text-align: center;
+  color: #ffffff;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+}

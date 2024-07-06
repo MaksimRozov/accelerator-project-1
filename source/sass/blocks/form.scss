@@ -1,0 +1,34 @@
+.form__content {
+  background-color: $main-color;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  color: #ffffff;
+}
+
+.form__title {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 100%;
+  color: #ffffff;
+}
+
+.form__input {
+  width: 100%;
+  box-sizing: border-box;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #74819c;
+  height: 27px;
+
+  &::placeholder {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 157%;
+    color: #ffffff;
+    opacity: 0.4;
+  }
+}
+
+.form__button {
+  width: 100%;
+}

@@ -1,0 +1,23 @@
+.button {
+  font-family: $primary-font;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 100%;
+  text-transform: uppercase;
+  text-align: center;
+  display: block;
+  text-decoration: none;
+  background-color: transparent;
+
+  &--main {
+    border: 2px solid $main-color;
+    padding: 22px 10px;
+    color: #102654;
+  }
+
+  &--second {
+    border: 2px solid #ffffff;
+    padding: 22px 10px;
+    color: #ffffff;
+  }
+}

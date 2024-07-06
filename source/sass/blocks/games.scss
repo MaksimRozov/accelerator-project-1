@@ -1,0 +1,36 @@
+.games__content {
+  color: #ffffff;
+  background-color: #ed0233;
+}
+
+.games__title {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 112%;
+  text-transform: uppercase;
+}
+
+.games__date-title {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 125%;
+}
+
+.games__date-info {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 100%;
+
+  span {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+  }
+}
+
+.games__heading {
+  margin: 0;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 125%;
+}

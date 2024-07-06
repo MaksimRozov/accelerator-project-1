@@ -1,0 +1,7 @@
+.features__title {
+  @include main-title;
+}
+
+.features__list {
+  @include list-style-none;
+}
