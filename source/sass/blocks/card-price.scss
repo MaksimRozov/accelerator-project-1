@@ -9,10 +9,12 @@
   font-weight: 700;
   font-size: 22px;
   line-height: 100%;
+  margin-bottom: 18px;
 }
 
 .card-price__duration {
   margin: 0;
+  margin-bottom: 64px;
 }
 
 .card-price__price {
@@ -20,4 +22,38 @@
   font-size: 48px;
   line-height: 150%;
   margin: 0;
+  color: #103aae;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 20px;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 33px;
+    background-image: url("../../img/ruble.png");
+  }
+
+  &::before {
+    content: attr(data-price);
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 150%;
+    text-align: center;
+    color: #e8e8e8;
+    position: absolute;
+    z-index: -1;
+    top: -47px;
+    opacity: 0.48;
+  }
+}
+
+.card-price__button {
+  padding-top: 25px;
+  padding-bottom: 25px;
 }

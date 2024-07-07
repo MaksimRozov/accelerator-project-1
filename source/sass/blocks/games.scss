@@ -1,6 +1,14 @@
 .games__content {
   color: #ffffff;
   background-color: #ed0233;
+  padding: 40px;
+}
+
+.games__header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 57px;
+  margin-bottom: 17px;
 }
 
 .games__title {
@@ -8,18 +16,32 @@
   font-size: 48px;
   line-height: 112%;
   text-transform: uppercase;
+  margin: 0;
+  font-family: $secondary-font;
 }
 
 .games__date-title {
   font-weight: 300;
   font-size: 16px;
   line-height: 125%;
+  border-bottom: 1px solid #ffffff;
+  padding-bottom: 2px;
+  margin-bottom: 3px;
 }
 
 .games__date-info {
+  display: flex;
+  align-items: center;
+  gap: 3px;
   font-weight: 700;
   font-size: 24px;
   line-height: 100%;
+
+  span:first-child {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 100%;
+  }
 
   span {
     font-weight: 400;
@@ -28,9 +50,14 @@
   }
 }
 
-.games__heading {
+.games__description {
   margin: 0;
   font-weight: 300;
   font-size: 16px;
   line-height: 125%;
+  margin-bottom: 16px;
+}
+
+.games__date-item {
+  margin-bottom: 4px;
 }

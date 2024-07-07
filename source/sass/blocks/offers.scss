@@ -1,5 +1,12 @@
+.offers {
+  padding-top: 66px;
+  padding-bottom: 40px;
+}
+
 .offers__title {
   @include main-title;
+
+  margin-bottom: 38px;
 }
 
 .offers__button {
@@ -8,9 +15,21 @@
   line-height: 100%;
   text-transform: uppercase;
   color: #ffffff;
+  display: block;
+  border-bottom: 1px solid currentColor;
+  width: fit-content;
+  margin: 0 auto;
+  padding-bottom: 4px;
+  text-decoration: none;
 }
 
-.offer__content {
+.offers__wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+}
+
+.offers__content {
   background-color: #ed0233;
   text-align: center;
   color: #ffffff;
@@ -23,10 +42,12 @@
   }
 }
 
-.offer__content p {
+.offers__content p {
   font-weight: 300;
   font-size: 16px;
   line-height: 125%;
+  margin-top: 5px;
+  margin-bottom: 29px;
 
   span {
     font-weight: 700;
@@ -37,6 +58,12 @@
 
 .offers__list {
   @include list-style-none;
+
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
 }
 
 .offers__item-button {
@@ -54,7 +81,7 @@
   border: 7px solid transparent;
   border-image: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
   border-image-slice: 7;
-  padding: 20px;
+  padding: 0 10px 27px;
 
   h3 {
     font-weight: 700;

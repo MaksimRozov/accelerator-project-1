@@ -10,6 +10,8 @@
   font-size: 32px;
   line-height: 100%;
   color: #ffffff;
+  font-family: $secondary-font;
+  margin-bottom: 36px;
 }
 
 .form__input {
@@ -19,6 +21,7 @@
   border: none;
   border-bottom: 1px solid #74819c;
   height: 27px;
+  margin-bottom: 36px;
 
   &::placeholder {
     font-weight: 300;

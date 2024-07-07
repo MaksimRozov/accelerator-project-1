@@ -1,9 +1,21 @@
 .main-footer {
   background-color: #030a1a;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.footer__content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 26px;
 }
 
 .main-footer__menu {
   @include list-style-none;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
 }
 
 .main-footer__menu-link {
@@ -12,4 +24,8 @@
   line-height: 143%;
   color: #ffffff;
   text-decoration: none;
+}
+
+.main-footer__menu-item:not(:last-child) {
+  margin-right: 20px;
 }

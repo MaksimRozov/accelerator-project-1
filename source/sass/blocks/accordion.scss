@@ -3,6 +3,9 @@
 }
 
 .accordion__item {
+  border-top: 1px solid #74819c;
+  border-bottom: 1px solid #74819c;
+
   h3 {
     font-weight: 400;
     font-size: 20px;
@@ -17,5 +20,14 @@
     font-size: 16px;
     line-height: 125%;
     color: #102654;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 36px;
   }
+}
+
+.accordion__header {
+  padding-right: 77px;
+  padding-bottom: 19px;
+  padding-top: 16px;
 }

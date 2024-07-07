@@ -2,6 +2,7 @@
   width: 68px;
   height: 68px;
   margin: 0 auto;
+  margin-bottom: 13px;
 }
 
 .slider-reviews__item {
@@ -9,14 +10,17 @@
   color: #ffffff;
   box-shadow: 0 0 40px 0 rgba(28, 51, 116, 0.2);
   background-color: #1c3374;
-  padding: 30px 25px;
-  width: 240px;
+  padding: 29px 25px 13px;
+  width: 239px;
+  box-sizing: border-box;
   margin: 0 auto;
 
   h3 {
     font-weight: 400;
     font-size: 18px;
     line-height: 111%;
+    margin: 0;
+    margin-bottom: 16px;
   }
 
   p {

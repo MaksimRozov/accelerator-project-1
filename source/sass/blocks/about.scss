@@ -1,11 +1,14 @@
 .about__title {
   @include main-title;
+
+  margin-bottom: 13px;
 }
 
 .about__description {
   font-size: 18px;
   line-height: 111%;
   margin: 0;
+  margin-bottom: 37px;
 }
 
 .about__text {
@@ -13,7 +16,31 @@
 }
 
 .about {
+  padding-top: 39px;
+
   .about__title {
     text-align: left;
   }
+}
+
+.about__image {
+  margin-top: 35px;
+  margin-bottom: 36px;
+}
+
+.about__video {
+  position: relative;
+}
+
+.about__video-button {
+  position: absolute;
+  right: 50%;
+  top: 50%;
+  transform: translate(50%, -50%);
+  border: none;
+  display: block;
+  width: 72px;
+  height: 72px;
+  background-color: transparent;
+  background-image: url("../../img/player-button.png");
 }

@@ -1,5 +1,20 @@
+.contacts {
+  padding-top: 40px;
+  padding-bottom: 37px;
+}
+
+.contacts__content {
+  font-style: normal;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 26px;
+}
+
 .contacts__title {
   @include main-title;
+
+  text-align: left;
+  margin-bottom: 36px;
 }
 
 .contacts__item-title {
@@ -8,6 +23,7 @@
   line-height: 100%;
   color: #102654;
   margin: 0;
+  margin-bottom: 13px;
 }
 
 .contacts__item-text {

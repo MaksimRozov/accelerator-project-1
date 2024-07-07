@@ -1,3 +1,7 @@
+.hero {
+  padding-top: 65px;
+}
+
 .hero__image {
   display: none;
 }
@@ -6,6 +10,8 @@
   @include list-style-none;
 
   line-height: 143%;
+  text-align: right;
+  align-self: self-end;
 }
 
 .hero__title-info {
@@ -13,14 +19,31 @@
   font-weight: 600;
   font-size: 32px;
   line-height: 100%;
+  font-family: $secondary-font;
+  margin-bottom: 14px;
 }
 
 .hero__title {
   margin: 0;
-  font-family: var(--second-family);
+  font-family: $secondary-font;
   font-weight: 800;
   font-size: 62px;
   line-height: 100%;
   letter-spacing: 0.02em;
   text-transform: uppercase;
+}
+
+.hero__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 48px;
+}
+
+.hero__button {
+  grid-column: 1/-1;
+}
+
+.hero__content-title {
+  text-align: right;
 }

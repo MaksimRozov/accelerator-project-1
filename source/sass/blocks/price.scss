@@ -1,23 +1,26 @@
 .price {
   background-color: #f8f9fc;
-  padding-top: 40px;
+  padding-top: 80px;
   padding-bottom: 40px;
 }
 
 .price__title {
   @include main-title;
+
+  margin-bottom: 31px;
 }
 
 .price__button {
   border: none;
   background-color: transparent;
   border-bottom: 2px solid transparent;
-  padding-bottom: 10px;
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 16px;
   line-height: 100%;
   color: rgba(16, 38, 84, 0.5);
+  padding: 0;
+  padding-bottom: 6px;
 
   &--active {
     border-bottom: 2px solid #d10a42;
@@ -26,10 +29,28 @@
 }
 
 .price__group-buttons {
+  display: flex;
   text-align: center;
-  border-bottom: 2px solid rgba(120, 120, 120, 0.2);
+  justify-content: space-between;
+  padding-bottom: 6px;
+  margin-bottom: 25px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 6px;
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: rgba(120, 120, 120, 0.2);
+  }
 }
 
 .price__list {
   @include list-style-none;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 35px;
 }

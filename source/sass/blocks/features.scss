@@ -1,7 +1,13 @@
 .features__title {
   @include main-title;
+
+  margin-bottom: 39px;
 }
 
 .features__list {
   @include list-style-none;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 22px;
 }

@@ -26,8 +26,10 @@
             <li class="hero__item">Групповые занятия</li>
             <li class="hero__item">Кардио-зона</li>
           </ul>
-          <p class="hero__title-info">Омск</p>
-          <h1 class="hero__title">Фитнес<br> центр</h1>
+          <div class="hero__content-title">
+            <p class="hero__title-info">Омск</p>
+            <h1 class="hero__title">Фитнес<br> центр</h1>
+          </div>
           <a class="hero__button button button--second" href="#">Купить абонемент</a>
         </div>
         <div class="hero__image">
@@ -38,14 +40,17 @@
   </header>
   <main class="page__main">
     <section class="about">
-      <h2 class="about__title">Тренажёрный зал</h2>
-      <p class="about__description">Просторный зал площадью 900 кв/м</p>
-      <p>Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и
-        здоровья. Тренажёрный зал оснащён всем необходимым современным оборудованием для всех спортсменов.</p>
+      <div class="container-page">
+        <h2 class="about__title">Тренажёрный зал</h2>
+        <p class="about__description">Просторный зал площадью 900 кв/м</p>
+        <p>Supergym – самый большой фитнес центр<br> за Уралом и идеальное место для укрепления тела и
+          здоровья. Тренажёрный зал оснащён всем необходимым современным оборудованием<br>для всех спортсменов.</p>
+      </div>
       <div class="about__image">
         <img src="img/gym.jpg" srcset="img/gym.webp" width="320" height="280" alt="Спортивный зал с разными тренажерами.">
       </div>
       <div class="about__video">
+        <img src="img/video-preview.jpg" srcset="img/video-preview.webp" width="320" height="170" alt="Спортивный зал с разными тренажерами.">
         <button class="about__video-button" type="button">
           <span class="visually-hidden">Воспроизвести видео</span>
         </button>
@@ -63,45 +68,51 @@
           <li class="card-price">
             <h3 class="card-price__title">С тренером</h3>
             <p class="card-price__duration">12 занятий</p>
-            <p class="card-price__price">5000</p>
+            <p class="card-price__price" data-price="5000">5000</p>
             <a class="card-price__button button button--main" href="#">Купить абонемент</a>
           </li>
           <li class="card-price">
             <h3 class="card-price__title">Дневной</h3>
             <p class="card-price__duration">с 8:00 до 17:00</p>
-            <p class="card-price__price">1700</p>
+            <p class="card-price__price" data-price="1700">1700</p>
             <a class="card-price__button button button--main" href="#">Купить абонемент</a>
           </li>
           <li class="card-price">
             <h3 class="card-price__title">Полный день</h3>
-            <p class="card-price__duration">2700</p>
-            <p class="card-price__price">5000</p>
+            <p class="card-price__duration">с 8:00 до 22:00</p>
+            <p class="card-price__price" data-price="2700">2700</p>
             <a class="card-price__button button button--main" href="#">Купить абонемент</a>
           </li>
         </ul>
       </div>
     </section>
-    <article class="games">
-      <div class="games__content">
-        <p class="games__title">super games</p>
-        <div class="games__date">
-          <div class="games__date-item">
-            <div class="games__date-title">Дата</div>
-            <div class="games__date-info">7<span>Марта<br> 2019</span></div>
+    <section class="banner container-page">
+      <h2 class="visually-hidden">Рекламный баннер</h2>
+      <article class="games">
+        <div class="games__content">
+          <div class="games__header">
+            <h1 class="games__title">super games</h1>
+            <div class="games__date">
+              <div class="games__date-item">
+                <div class="games__date-title">Дата</div>
+                <div class="games__date-info"><span>7</span><span>Марта<br> 2019</span></div>
+              </div>
+              <div class="games__date-item">
+                <div class="games__date-title">Время</div>
+                <div class="games__date-info">12:00</div>
+              </div>
+            </div>
           </div>
-          <div class="games__date-item">
-            <div class="games__date-title">Время</div>
-            <div class="games__date-info">12:00</div>
-          </div>
+          <p class="games__description">Ежегодные соревнования<br> по CrossFit</p>
+          <a class="games__button button button--second" href="#">заполнить заявку</a>
         </div>
-        <h1 class="games__heading">Ежегодные соревнования по CrossFit</h1>
-        <a class="games__button button button--second" href="#">заполнить заявку</a>
-      </div>
-      <div class="games__image">
-      </div>
-    </article>
-    <section class="jury">
-      <h2 class="jury__title">Жюри</h2>
+        <div class="games__image">
+          <img src="img/games.jpg" srcset="img/games.webp" width="290" height="290" alt="Мужчина выбивает рукой белые брызги на фиолетовом фоне.">
+        </div>
+      </article>
+    </section>
+    <section class="jury container-page">
+      <h2 class=" jury__title">Жюри</h2>
       <div class="jury__slider">
         <div class="card-jury">
           <img class="card-jury__images" src="img/card-jury-1.jpg" srcset="img/card-jury-1.webp" width="260" height="300" alt="Участник жури.">
@@ -110,60 +121,60 @@
       </div>
     </section>
     <section class="features">
-      <div class="container-page">
-        <h2 class="features__title">Наши преимущества</h2>
-        <ul class="features__list">
-          <li class="feature__item card-features">
-            <p>900 <span>кв/м</span></p>
-            <h3>Площадь</h3>
-            <p>Занимайтесь без очередей и толкучки</p>
-          </li>
-          <li class="feature__item card-features">
-            <p>70 <span>машин</span></p>
-            <h3>Собственная парковка</h3>
-            <p>Вы всегда найдёте место для своей машины на нашей парковке</p>
-          </li>
-          <li class="feature__item card-features card-features--second">
-            <p>100</p>
-            <h3>Тренажёров</h3>
-            <p>Современные тренажёры на все группы мышц</p>
-          </li>
-          <li class="feature__item card-features">
-            <p>350 <span>мест</span></p>
-            <h3>Комфорт</h3>
-            <p>Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
-          </li>
-          <li class="feature__item card-features">
-            <p>5+ <span>лет</span></p>
-            <h3>Тренерский опыт</h3>
-            <p>Добивайтесь своих целей быстрее с профессиональным тренером</p>
-          </li>
-        </ul>
-      </div>
+      <h2 class="features__title">Наши преимущества</h2>
+      <ul class="features__list">
+        <li class="feature__item card-features">
+          <p>900 <span>кв/м</span></p>
+          <h3>Площадь</h3>
+          <p>Занимайтесь без очередей и толкучки</p>
+        </li>
+        <li class="feature__item card-features">
+          <p>70 <span>машин</span></p>
+          <h3>Собственная парковка</h3>
+          <p>Вы всегда найдёте место для своей<br> машины на нашей парковке</p>
+        </li>
+        <li class="feature__item card-features card-features--second">
+          <p>100</p>
+          <h3>Тренажёров</h3>
+          <p>Современные тренажёры<br> на все группы мышц</p>
+        </li>
+        <li class="feature__item card-features">
+          <p>350 <span>мест</span></p>
+          <h3>Комфорт</h3>
+          <p>Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
+        </li>
+        <li class="feature__item card-features">
+          <p>5+ <span>лет</span></p>
+          <h3>Тренерский опыт</h3>
+          <p>Добивайтесь своих целей быстрее с профессиональным тренером</p>
+        </li>
+      </ul>
     </section>
     <section class="offers">
       <h2 class="offers__title">Акции</h2>
-      <div class="offers__banner">
-        <div class="offer__content">
-          <span>Год</span>
-          <p><span>4999</span></p>
-          <p>Безлимитный абонемент в тренажёрный зал</p>
-          <a class="offers__button" href="#">подробнее</a>
+      <div class="offers__wrapper">
+        <div class="offers__banner">
+          <div class="offers__content">
+            <span>Год</span>
+            <p><span>4999</span></p>
+            <p>Безлимитный абонемент<br> в тренажёрный зал</p>
+            <a class="offers__button" href="#">подробнее</a>
+          </div>
+          <img src="img/girl-img.jpg" srcset="img/girl-img.webp" width="320" height="360" alt="Девушка на фоне синего неба.">
         </div>
-        <img src="img/girl-img.jpg" srcset="img/girl-img.webp" width="320" height="360" alt="Девушка на фоне синего неба.">
+        <ul class="offers__list">
+          <li class="offers__item">
+            <h3>Месяц бесплатно</h3>
+            <p>Приведи друга, получи абонемент<br> в подарок</p>
+            <a class="offers__item-button" href="#">подробнее</a>
+          </li>
+          <li class="offers__item">
+            <h3>Скидка 20%</h3>
+            <p>Корпоративный фитнес с командой</p>
+            <a class="offers__item-button" href="#">подробнее</a>
+          </li>
+        </ul>
       </div>
-      <ul class="offers__list">
-        <li class="offers__item">
-          <h3>Месяц бесплатно</h3>
-          <p>Приведи друга, получи абонемент в подарок</p>
-          <a class="offers__item-button" href="#">подробнее</a>
-        </li>
-        <li class="offers__item">
-          <h3>Скидка 20%</h3>
-          <p>Корпоративный фитнес с командой</p>
-          <a class="offers__item-button" href="#">подробнее</a>
-        </li>
-      </ul>
     </section>
     <section class="faq">
       <div class="container-page">
@@ -264,7 +275,7 @@
     </section>
   </main>
   <footer class="main-footer">
-    <div class="container-page">
+    <div class="footer__content container-page">
       <a class="main-footer__logo" href="#">
         <svg width="100" height="20" role="img" aria-label="Логотип кампании">
           <use href="/__spritemap#sprite-logo"></use>

@@ -1,11 +1,20 @@
+.faq {
+  padding-top: 74px;
+  padding-bottom: 70px;
+  background-color: #f8f9fc;
+}
+
 .faq__title {
   @include main-title;
+
+  margin-bottom: 33px;
 }
 
 .faq__group-button {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
+  margin-bottom: 35px;
 }
 
 .faq__button {
