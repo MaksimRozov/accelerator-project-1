@@ -9,7 +9,7 @@
 </head>
 
 <body class="page__body">
-  <header class="main-header">
+  <header class="main-header" data-test="hero">
     <div class="container-page">
       <div class="header__content">
         <a class="main-header__logo" href="#">
@@ -33,31 +33,46 @@
           <a class="hero__button button button--second" href="#">Купить абонемент</a>
         </div>
         <div class="hero__image">
-          <img src="img/hero-img.jpg" srcset="img/hero-img.webp" width="324" height="390" alt="Молодой человек в футболке с логотипом на груди.">
+          <picture>
+            <source type="image/jpeg" media="(min-width: 1365px)" width="500" height="524" srcset="img/hero-img-desktop.jpg 1x, img/hero-img-desktop2x.jpg 2x" />
+            <source type="image/jpeg" media="(min-width: 767px)" width="324" height="390" srcset="img/hero-img.jpg 1x, img/hero-img2x.jpg 2x" />
+            <img width="324" height="390" src="img/hero-img.jpg" srcset="img/hero-img2x.jpg 2x" alt="Молодой человек в футболке с логотипом на груди." />
+          </picture>
         </div>
       </div>
     </div>
   </header>
   <main class="page__main">
-    <section class="about">
-      <div class="container-page">
-        <h2 class="about__title">Тренажёрный зал</h2>
-        <p class="about__description">Просторный зал площадью 900 кв/м</p>
-        <p>Supergym – самый большой фитнес центр<br> за Уралом и идеальное место для укрепления тела и
-          здоровья. Тренажёрный зал оснащён всем необходимым современным оборудованием<br>для всех спортсменов.</p>
-      </div>
-      <div class="about__image">
-        <img src="img/gym.jpg" srcset="img/gym.webp" width="320" height="280" alt="Спортивный зал с разными тренажерами.">
-      </div>
-      <div class="about__video">
-        <img src="img/video-preview.jpg" srcset="img/video-preview.webp" width="320" height="170" alt="Спортивный зал с разными тренажерами.">
-        <button class="about__video-button" type="button">
-          <span class="visually-hidden">Воспроизвести видео</span>
-        </button>
+    <section class="about wrapper" data-test="about">
+      <div class="about__content">
+        <div class="about__info">
+          <h2 class="about__title">Тренажёрный зал</h2>
+          <p class="about__description">Просторный зал площадью 900 кв/м</p>
+          <p>Supergym – самый большой фитнес центр<br> за Уралом и идеальное место для укрепления тела и
+            здоровья. Тренажёрный зал оснащён всем необходимым современным оборудованием<br>для всех спортсменов.</p>
+          <p>В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажёрами. Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
+        </div>
+        <div class="about__image-content">
+          <div class="about__image">
+            <picture>
+              <source media="(min-width: 1366px)" type="image/webp" srcset="img/gym-desktop@1x.webp 1x, img/gym-desktop@2x.webp 2x" width="660" height="400">
+              <source media="(min-width: 1366px)" type="image/jpeg" srcset="img/gym-desktop.jpg 1x, img/gym-desktop@2x.jpg 2x" width="660" height="400">
+              <source media="(min-width: 768px)" type="image/webp" srcset="img/gym-tablet.webp 1x, img/gym-tablet@2x.webp 2x" width="678" height="345">
+              <source media="(min-width: 768px)" type="image/jpeg" srcset="img/gym-tablet.jpg 1x, img/gym-tablet@2x.jpg 2x" width="678" height="345">
+              <img src="img/gym.jpg" srcset="img/gym.webp" width="320" height="280" alt="Спортивный зал с разными тренажерами.">
+            </picture>
+          </div>
+          <div class="about__video">
+            <img src="img/video-preview.jpg" srcset="img/video-preview.webp" width="320" height="170" alt="Спортивный зал с разными тренажерами.">
+            <button class="about__video-button" type="button">
+              <span class="visually-hidden">Воспроизвести видео</span>
+            </button>
+          </div>
+        </div>
       </div>
     </section>
-    <section class="price">
-      <div class="container-page">
+    <section class="price" data-test="price">
+      <div class="price__content wrapper">
         <h2 class="price__title">Абонементы</h2>
         <div class="price__group-buttons">
           <button class="price__button price__button--active" type="button">1 месяц</button>
@@ -88,10 +103,10 @@
     </section>
     <section class="banner container-page">
       <h2 class="visually-hidden">Рекламный баннер</h2>
-      <article class="games">
+      <article class="games" data-test="games">
         <div class="games__content">
           <div class="games__header">
-            <h1 class="games__title">super games</h1>
+            <h1 class="games__title">super<br> games</h1>
             <div class="games__date">
               <div class="games__date-item">
                 <div class="games__date-title">Дата</div>
@@ -106,12 +121,17 @@
           <p class="games__description">Ежегодные соревнования<br> по CrossFit</p>
           <a class="games__button button button--second" href="#">заполнить заявку</a>
         </div>
-        <div class="games__image">
-          <img src="img/games.jpg" srcset="img/games.webp" width="290" height="290" alt="Мужчина выбивает рукой белые брызги на фиолетовом фоне.">
-        </div>
+
+        <picture>
+          <source media="(min-width: 1366px)" type="image/webp" srcset="img/games-desktop.webp 1x, img/games-desktop@2x.webp 2x" width="660" height="400">
+          <source media="(min-width: 1366px)" type="image/jpeg" srcset="img/games-desktop.jpg 1x, img/games-desktop@2x.jpg 2x" width="660" height="400">
+          <source media="(min-width: 768px)" type="image/webp" srcset="img/games-tablet.webp 1x, img/games-tablet@2x.webp 2x" width="678" height="345">
+          <source media="(min-width: 768px)" type="image/jpeg" srcset="img/games-tablet.jpg 1x, img/games-tablet@2x.jpg 2x" width="678" height="345">
+          <img class="games__image" src="img/games.jpg" srcset="img/games@2x.jpg 2x" width="290" height="290" alt="Мужчина выбивает рукой белые брызги на фиолетовом фоне.">
+        </picture>
       </article>
     </section>
-    <section class="jury container-page">
+    <section class="jury container-page" data-test="juri">
       <h2 class=" jury__title">Жюри</h2>
       <div class="jury__slider">
         <div class="card-jury">
@@ -120,37 +140,47 @@
         </div>
       </div>
     </section>
-    <section class="features">
-      <h2 class="features__title">Наши преимущества</h2>
-      <ul class="features__list">
-        <li class="feature__item card-features">
-          <p>900 <span>кв/м</span></p>
-          <h3>Площадь</h3>
-          <p>Занимайтесь без очередей и толкучки</p>
-        </li>
-        <li class="feature__item card-features">
-          <p>70 <span>машин</span></p>
-          <h3>Собственная парковка</h3>
-          <p>Вы всегда найдёте место для своей<br> машины на нашей парковке</p>
-        </li>
-        <li class="feature__item card-features card-features--second">
-          <p>100</p>
-          <h3>Тренажёров</h3>
-          <p>Современные тренажёры<br> на все группы мышц</p>
-        </li>
-        <li class="feature__item card-features">
-          <p>350 <span>мест</span></p>
-          <h3>Комфорт</h3>
-          <p>Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
-        </li>
-        <li class="feature__item card-features">
-          <p>5+ <span>лет</span></p>
-          <h3>Тренерский опыт</h3>
-          <p>Добивайтесь своих целей быстрее с профессиональным тренером</p>
-        </li>
-      </ul>
+    <section class="features" data-test="features">
+      <div class="wrapper">
+        <h2 class="features__title">Наши преимущества</h2>
+        <ul class="features__list">
+          <li class="feature__item card-features">
+            <p>900 <span>кв/м</span></p>
+            <div class="card-features__content">
+              <h3>Площадь</h3>
+              <p>Занимайтесь без очередей и толкучки</p>
+            </div>
+          </li>
+          <li class="feature__item card-features">
+            <p>70 <span>машин</span></p>
+            <div class="card-features__content">
+              <h3>Собственная парковка</h3>
+              <p>Вы всегда найдёте место для своей<br> машины на нашей парковке</p>
+            </div>
+          </li>
+          <li class="feature__item card-features card-features--second">
+            <p>100</p>
+            <h3>Тренажёров</h3>
+            <p>Современные тренажёры<br> на все группы мышц</p>
+          </li>
+          <li class="feature__item card-features">
+            <p>350 <span>мест</span></p>
+            <div class="card-features__content">
+              <h3>Комфорт</h3>
+              <p>Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
+            </div>
+          </li>
+          <li class="feature__item card-features">
+            <p>5+ <span>лет</span></p>
+            <div class="card-features__content">
+              <h3>Тренерский опыт</h3>
+              <p>Добивайтесь своих целей быстрее с профессиональным тренером</p>
+            </div>
+          </li>
+        </ul>
+      </div>
     </section>
-    <section class="offers">
+    <section class="offers wrapper" data-test="offers">
       <h2 class="offers__title">Акции</h2>
       <div class="offers__wrapper">
         <div class="offers__banner">
@@ -160,7 +190,15 @@
             <p>Безлимитный абонемент<br> в тренажёрный зал</p>
             <a class="offers__button" href="#">подробнее</a>
           </div>
-          <img src="img/girl-img.jpg" srcset="img/girl-img.webp" width="320" height="360" alt="Девушка на фоне синего неба.">
+          <div class="offers__image">
+            <picture>
+              <source media="(min-width: 1366px)" type="image/webp" srcset="img/girl-img-desktop.webp 1x, img/girl-img-desktop@2x.webp 2x" width="280" height="460">
+              <source media="(min-width: 1366px)" type="image/jpeg" srcset="img/girl-img-desktop.jpg 1x, img/girl-img-desktop@2x.jpg 2x" width="280" height="460">
+              <source media="(min-width: 768px)" type="image/webp" srcset="img/girl-img-tablet.webp 1x, img/girl-img-tablet@2x.webp 2x" width="400" height="462">
+              <source media="(min-width: 768px)" type="image/jpeg" srcset="img/girl-img-tablet.jpg 1x, img/girl-img-tablet@2x.jpg 2x" width="400" height="462">
+              <img class="games__image" src="img/girl-img.jpg" srcset="img/girl-img@2x.jpg 2x" width="320" height="360" alt="Девушка на фоне синего неба.">
+            </picture>
+          </div>
         </div>
         <ul class="offers__list">
           <li class="offers__item">
@@ -176,52 +214,54 @@
         </ul>
       </div>
     </section>
-    <section class="faq">
+    <section class="faq" data-test="faq">
       <div class="container-page">
         <h2 class="faq__title">Вопросы и ответы</h2>
-        <div class="faq__group-button">
-          <button class="faq__button faq__button--active" type="button">Центр</button>
-          <button class="faq__button" type="button">Абонемент</button>
-          <button class="faq__button" type="button">Услуги</button>
-          <button class="faq__button" type="button">Правила</button>
+        <div class="faq__content">
+          <div class="faq__group-button">
+            <button class="faq__button faq__button--active" type="button">Центр</button>
+            <button class="faq__button" type="button">Абонемент</button>
+            <button class="faq__button" type="button">Услуги</button>
+            <button class="faq__button" type="button">Правила</button>
+          </div>
+          <ul class="faq__accordion accordion">
+            <li class="accordion__item">
+              <div class="accordion__header accordion__header--active">
+                <h3>Как стать членом<br> фитнес-центра?</h3>
+              </div>
+              <div class="accordion__content">
+                <p>При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор.<br> При покупке абонемента онлайн, анкета также заполняется онлайн<br> и договор придёт вам на почту.</p>
+              </div>
+            </li>
+            <li class="accordion__item">
+              <div class="accordion__header">
+                <h3>Где можно посмотреть расписание?</h3>
+              </div>
+              <div class="accordion__content">
+                <!-- <p>При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придёт вам на почту.</p> -->
+              </div>
+            </li>
+            <li class="accordion__item">
+              <div class="accordion__header">
+                <h3>Есть кулеры в центре? Предоставляются полотенца?</h3>
+              </div>
+              <div class="accordion__content">
+                <!-- <p>При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придёт вам на почту.</p> -->
+              </div>
+            </li>
+            <li class="accordion__item">
+              <div class="accordion__header">
+                <h3>Сколько тренеров работает в клубе и какова<br> их квалификация?</h3>
+              </div>
+              <div class="accordion__content">
+                <!-- <p>При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придёт вам на почту.</p> -->
+              </div>
+            </li>
+          </ul>
         </div>
-        <ul class="faq__accordion accordion">
-          <li class="accordion__item">
-            <div class="accordion__header">
-              <h3>Как стать членом фитнес-центра?</h3>
-            </div>
-            <div class="accordion__content">
-              <p>При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придёт вам на почту.</p>
-            </div>
-          </li>
-          <li class="accordion__item">
-            <div class="accordion__header">
-              <h3>Где можно посмотреть расписание?</h3>
-            </div>
-            <div class="accordion__content">
-              <p>При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придёт вам на почту.</p>
-            </div>
-          </li>
-          <li class="accordion__item">
-            <div class="accordion__header">
-              <h3>Есть кулеры в центре? Предоставляются полотенца?</h3>
-            </div>
-            <div class="accordion__content">
-              <p>При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придёт вам на почту.</p>
-            </div>
-          </li>
-          <li class="accordion__item">
-            <div class="accordion__header">
-              <h3>Сколько тренеров работает в клубе и какова их квалификация?</h3>
-            </div>
-            <div class="accordion__content">
-              <p>При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придёт вам на почту.</p>
-            </div>
-          </li>
-        </ul>
       </div>
     </section>
-    <section class="reviews">
+    <section class="reviews" data-test="reviews">
       <h2 class="reviews__title">Отзывы</h2>
       <div class="reviews__slider slider-reviews">
         <div class="slider-reviews__item">
@@ -233,12 +273,12 @@
         </div>
       </div>
     </section>
-    <section class="form">
+    <section class="form" data-test="form">
       <div class="form__content">
-        <div class="container-page">
-          <h2 class="visually-hidden">Форма обратной связи</h2>
-          <div class="form__title">Бесплатное занятие</div>
-          <form action="https://echo.htmlacademy.ru/" method="post">
+        <h2 class="visually-hidden">Форма обратной связи</h2>
+        <div class="form__title">Бесплатное занятие</div>
+        <form action="https://echo.htmlacademy.ru/" method="post">
+          <div class="form__group-input">
             <div class="form__item">
               <label class="visually-hidden" for="name">Имя</label>
               <input class="form__input" type="text" name="name" id="name" placeholder="Имя">
@@ -247,11 +287,11 @@
               <label class="visually-hidden" for="telephone">Имя</label>
               <input class="form__input" type="text" name="telephone" id="telephone" placeholder="Телефон">
             </div>
-            <button class="form__button button button--second" type="submit">отправить</button>
-          </form>
-        </div>
+          </div>
+          <button class="form__button button button--second" type="submit">отправить</button>
+        </form>
       </div>
-      <div class="contacts container-page">
+      <div class="contacts">
         <h2 class="contacts__title">Контакты</h2>
         <address class="contacts__content">
           <div class="contacts__item">
@@ -274,7 +314,7 @@
       </div>
     </section>
   </main>
-  <footer class="main-footer">
+  <footer class="main-footer" data-test="footer">
     <div class="footer__content container-page">
       <a class="main-footer__logo" href="#">
         <svg width="100" height="20" role="img" aria-label="Логотип кампании">

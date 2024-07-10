@@ -11,3 +11,9 @@
 .reviews__slider {
   margin-bottom: 41px;
 }
+
+.reviews .reviews__title {
+  @media (min-width: $tablet-width) {
+    font-size: 54px;
+  }
+}

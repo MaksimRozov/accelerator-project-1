@@ -4,6 +4,14 @@
   background-color: #f8f9fc;
 }
 
+.faq__content {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    column-gap: 40px;
+  }
+}
+
 .faq__title {
   @include main-title;
 
@@ -12,9 +20,20 @@
 
 .faq__group-button {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
   gap: 10px;
   margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 0;
+  }
 }
 
 .faq__button {
@@ -27,11 +46,18 @@
   color: #102654;
   background: none;
   padding: 14px 22px;
-  width: 140px;
   box-sizing: border-box;
 
   &--active {
     background: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
     color: #ffffff;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 54px;
   }
 }

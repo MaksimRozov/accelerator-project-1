@@ -1,9 +1,20 @@
 .hero {
   padding-top: 65px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: min-content 1fr;
+    column-gap: 30px;
+  }
 }
 
 .hero__image {
   display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
 }
 
 .hero__list {
@@ -12,6 +23,11 @@
   line-height: 143%;
   text-align: right;
   align-self: self-end;
+
+  @media (min-width: $tablet-width) {
+    align-self: center;
+    grid-row: 1 / -1;
+  }
 }
 
 .hero__title-info {
@@ -21,6 +37,14 @@
   line-height: 100%;
   font-family: $secondary-font;
   margin-bottom: 14px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 54px;
+  }
 }
 
 .hero__title {
@@ -31,6 +55,18 @@
   line-height: 100%;
   letter-spacing: 0.02em;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 72px;
+    line-height: 118%;
+    letter-spacing: 0.03em;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 92px;
+    line-height: 120%;
+    letter-spacing: 0.04em;
+  }
 }
 
 .hero__content {
@@ -38,10 +74,19 @@
   grid-template-columns: 1fr 1fr;
   column-gap: 20px;
   row-gap: 48px;
+
+  @media (min-width: $tablet-width) {
+    align-self: center;
+  }
 }
 
 .hero__button {
   grid-column: 1/-1;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 2;
+    align-self: start;
+  }
 }
 
 .hero__content-title {

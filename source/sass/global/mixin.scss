@@ -22,4 +22,12 @@
   color: #102654;
   margin: 0;
   font-family: $secondary-font;
+
+  @media (min-width: $tablet-width) {
+    font-size: 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 54px;
+  }
 }

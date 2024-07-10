@@ -1,13 +1,19 @@
 .main-footer {
   background-color: #030a1a;
   padding-top: 40px;
-  padding-bottom: 40px;
+  padding-bottom: 44px;
 }
 
 .footer__content {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 26px;
+  gap: 23px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: max-content max-content 95px;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 
 .main-footer__menu {
@@ -15,11 +21,11 @@
 
   display: flex;
   flex-wrap: wrap;
-  gap: 16px;
+  gap: 18px;
 }
 
 .main-footer__menu-link {
-  font-weight: 400;
+  font-weight: 300;
   font-size: 14px;
   line-height: 143%;
   color: #ffffff;
@@ -28,4 +34,18 @@
 
 .main-footer__menu-item:not(:last-child) {
   margin-right: 20px;
+}
+
+.main-footer__logo {
+  svg {
+    display: block;
+  }
+}
+
+.main-footer__social {
+  margin-top: 5px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }

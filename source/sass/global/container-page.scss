@@ -3,4 +3,26 @@
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1160px;
+    padding: 0 103px;
+  }
+}
+
+.wrapper {
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1160px;
+    padding: 0 103px;
+  }
 }

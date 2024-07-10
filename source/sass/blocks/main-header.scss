@@ -17,6 +17,14 @@
   color: #ffffff;
   display: block;
   text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 26px;
+  }
 }
 
 .main-header__logo {

@@ -1,3 +1,9 @@
+.features {
+  background-color: #f8f9fc;
+  padding-top: 40px;
+  padding-bottom: 24px;
+}
+
 .features__title {
   @include main-title;
 
@@ -10,4 +16,20 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: 22px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr 1fr;
+    padding: 0 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.feature__item:nth-child(1),
+.feature__item:nth-child(2) {
+  @media (min-width: $desktop-width) {
+    border-bottom: 2px solid rgba(209, 10, 66, 0.2);
+  }
 }

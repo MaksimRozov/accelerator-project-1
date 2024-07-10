@@ -10,6 +10,14 @@
   font-size: 22px;
   line-height: 100%;
   margin-bottom: 18px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 26px;
+  }
 }
 
 .card-price__duration {
@@ -50,6 +58,14 @@
     z-index: -1;
     top: -47px;
     opacity: 0.48;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+
+    &::before {
+      font-size: 100px;
+    }
   }
 }
 

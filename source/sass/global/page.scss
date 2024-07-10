@@ -12,6 +12,11 @@
   font-size: 14px;
   line-height: 157%;
   color: $main-color;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 150%;
+  }
 }
 
 .page__main {
