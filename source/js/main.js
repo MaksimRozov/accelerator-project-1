@@ -4,6 +4,7 @@
 // import 'swiper/css';
 
 import { sliderJuryInit } from './modules/slider-jury-init';
+import { sliderReviewsInit } from './modules/slider-reviews-init';
 
 // // Функция для загрузки iframe с видео
 // function loadVideo() {
@@ -20,5 +21,6 @@ import { sliderJuryInit } from './modules/slider-jury-init';
 window.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('load', () => {
     sliderJuryInit();
+    sliderReviewsInit();
   });
 });

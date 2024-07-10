@@ -9,11 +9,36 @@
 }
 
 .reviews__slider {
+  margin: 0 auto;
   margin-bottom: 41px;
+  position: relative;
+  width: 503px;
 }
 
 .reviews .reviews__title {
   @media (min-width: $tablet-width) {
     font-size: 54px;
+  }
+}
+
+.reviews__button {
+  background-color: #102654;
+  border: none;
+  width: 17px;
+  height: 32px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  cursor: pointer;
+
+  &--next {
+    mask-image: url("../__spritemap#sprite-slider-arrow-right-view");
+    right: -36px;
+  }
+
+  &--prev {
+    mask-image: url("../__spritemap#sprite-slider-arrow-left-view");
+    left: -36px;
   }
 }

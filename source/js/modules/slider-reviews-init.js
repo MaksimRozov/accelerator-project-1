@@ -1,12 +1,12 @@
 import Swiper from 'swiper';
 import { Navigation } from 'swiper/modules';
 
-const swiperJury = document.querySelector('.swiper-jury');
+const reviewsSlider = document.querySelector('.reviews-slider');
 
-const sliderJuryInit = () => {
-  if (swiperJury) {
+const sliderReviewsInit = () => {
+  if (reviewsSlider) {
     // eslint-disable-next-line no-unused-vars
-    const swiper = new Swiper(swiperJury, {
+    const swiperReviews = new Swiper(reviewsSlider, {
       modules: [Navigation],
       grabCursor: false,
       watchOverflow: false,
@@ -20,18 +20,18 @@ const sliderJuryInit = () => {
         },
 
         768: {
-          slidesPerView: 2,
+          slidesPerView: 1,
           spaceBetween: 40,
-          initialSlide: 2,
+          initialSlide: 1,
           simulateTouch: false,
           navigation: {
-            nextEl: '.jury__button--next',
-            prevEl: '.jury__button--prev',
+            nextEl: '.reviews__button--next',
+            prevEl: '.reviews__button--prev',
           },
         },
 
         1366: {
-          slidesPerView: 4,
+          slidesPerView: 1,
           spaceBetween: 40,
         }
       },
@@ -41,4 +41,4 @@ const sliderJuryInit = () => {
 };
 
 
-export { sliderJuryInit };
+export { sliderReviewsInit };
