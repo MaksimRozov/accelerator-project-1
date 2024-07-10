@@ -3,6 +3,7 @@
 // import {Navigation, Pagination} from "swiper/modules";
 // import 'swiper/css';
 
+import { sliderJuryInit } from './modules/slider-jury-init';
 
 // // Функция для загрузки iframe с видео
 // function loadVideo() {
@@ -14,3 +15,10 @@
 // document.querySelector('.about__video-button').addEventListener('click', () => {
 //   loadVideo(); // Вызываем функцию загрузки видео
 // });
+
+
+window.addEventListener('DOMContentLoaded', () => {
+  window.addEventListener('load', () => {
+    sliderJuryInit();
+  });
+});

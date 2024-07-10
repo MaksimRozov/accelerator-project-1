@@ -11,7 +11,7 @@
 <body class="page__body">
   <header class="main-header" data-test="hero">
     <div class="container-page">
-      <div class="header__content">
+      <div class="main-header__content">
         <a class="main-header__logo" href="#">
           <svg width="100" height="20" role="img" aria-label="Логотип кампании.">
             <use href="/__spritemap#sprite-logo"></use>
@@ -34,16 +34,16 @@
         </div>
         <div class="hero__image">
           <picture>
-            <source type="image/jpeg" media="(min-width: 1365px)" width="500" height="524" srcset="img/hero-img-desktop.jpg 1x, img/hero-img-desktop2x.jpg 2x" />
-            <source type="image/jpeg" media="(min-width: 767px)" width="324" height="390" srcset="img/hero-img.jpg 1x, img/hero-img2x.jpg 2x" />
-            <img width="324" height="390" src="img/hero-img.jpg" srcset="img/hero-img2x.jpg 2x" alt="Молодой человек в футболке с логотипом на груди." />
+            <source type="image/jpeg" media="(min-width: 1365px)" width="500" height="524" srcset="img/hero-img-desktop.jpg 1x, img/hero-img-desktop2x.jpg 2x">
+            <source type="image/jpeg" media="(min-width: 767px)" width="324" height="390" srcset="img/hero-img.jpg 1x, img/hero-img2x.jpg 2x">
+            <img width="324" height="390" src="img/hero-img.jpg" srcset="img/hero-img2x.jpg 2x" alt="Молодой человек в футболке с логотипом на груди.">
           </picture>
         </div>
       </div>
     </div>
   </header>
   <main class="page__main">
-    <section class="about wrapper" data-test="about">
+    <section class="about container-page" data-test="about">
       <div class="about__content">
         <div class="about__info">
           <h2 class="about__title">Тренажёрный зал</h2>
@@ -72,7 +72,7 @@
       </div>
     </section>
     <section class="price" data-test="price">
-      <div class="price__content wrapper">
+      <div class="price__content container-page">
         <h2 class="price__title">Абонементы</h2>
         <div class="price__group-buttons">
           <button class="price__button price__button--active" type="button">1 месяц</button>
@@ -106,7 +106,7 @@
       <article class="games" data-test="games">
         <div class="games__content">
           <div class="games__header">
-            <h1 class="games__title">super<br> games</h1>
+            <h3 class="games__title">super<br> games</h3>
             <div class="games__date">
               <div class="games__date-item">
                 <div class="games__date-title">Дата</div>
@@ -133,44 +133,84 @@
     </section>
     <section class="jury container-page" data-test="juri">
       <h2 class=" jury__title">Жюри</h2>
-      <div class="jury__slider">
-        <div class="card-jury">
-          <img class="card-jury__images" src="img/card-jury-1.jpg" srcset="img/card-jury-1.webp" width="260" height="300" alt="Участник жури.">
-          <span class="card-jury__title">Анна Павлова</span>
+      <div class="swiper swiper-jury jury__slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="card-jury">
+              <img class="card-jury__images" src="img/card-jury-1.jpg" srcset="img/card-jury-1.webp" width="260" height="300" alt="Участник жури.">
+              <span class="card-jury__title">Анна Павлова</span>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card-jury">
+              <img class="card-jury__images" src="img/card-jury-1.jpg" srcset="img/card-jury-1.webp" width="260" height="300" alt="Участник жури.">
+              <span class="card-jury__title">Анна Павлова</span>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card-jury">
+              <img class="card-jury__images" src="img/card-jury-1.jpg" srcset="img/card-jury-1.webp" width="260" height="300" alt="Участник жури.">
+              <span class="card-jury__title">Анна Павлова</span>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card-jury">
+              <img class="card-jury__images" src="img/card-jury-1.jpg" srcset="img/card-jury-1.webp" width="260" height="300" alt="Участник жури.">
+              <span class="card-jury__title">Анна Павлова</span>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card-jury">
+              <img class="card-jury__images" src="img/card-jury-1.jpg" srcset="img/card-jury-1.webp" width="260" height="300" alt="Участник жури.">
+              <span class="card-jury__title">Анна Павлова</span>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card-jury">
+              <img class="card-jury__images" src="img/card-jury-1.jpg" srcset="img/card-jury-1.webp" width="260" height="300" alt="Участник жури.">
+              <span class="card-jury__title">Анна Павлова</span>
+            </div>
+          </div>
         </div>
+        <button class="jury__button jury__button--prev" type="button">
+          <span class="visually-hidden">Назад</span>
+        </button>
+        <button class="jury__button jury__button--next" type="button">
+          <span class="visually-hidden">Вперед</span>
+        </button>
       </div>
     </section>
     <section class="features" data-test="features">
-      <div class="wrapper">
+      <div class="container-page">
         <h2 class="features__title">Наши преимущества</h2>
         <ul class="features__list">
-          <li class="feature__item card-features">
+          <li class="features__item card-features">
             <p>900 <span>кв/м</span></p>
             <div class="card-features__content">
               <h3>Площадь</h3>
               <p>Занимайтесь без очередей и толкучки</p>
             </div>
           </li>
-          <li class="feature__item card-features">
+          <li class="features__item card-features">
             <p>70 <span>машин</span></p>
             <div class="card-features__content">
               <h3>Собственная парковка</h3>
               <p>Вы всегда найдёте место для своей<br> машины на нашей парковке</p>
             </div>
           </li>
-          <li class="feature__item card-features card-features--second">
+          <li class="features__item card-features card-features--second">
             <p>100</p>
             <h3>Тренажёров</h3>
             <p>Современные тренажёры<br> на все группы мышц</p>
           </li>
-          <li class="feature__item card-features">
+          <li class="features__item card-features">
             <p>350 <span>мест</span></p>
             <div class="card-features__content">
               <h3>Комфорт</h3>
               <p>Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
             </div>
           </li>
-          <li class="feature__item card-features">
+          <li class="features__item card-features">
             <p>5+ <span>лет</span></p>
             <div class="card-features__content">
               <h3>Тренерский опыт</h3>
@@ -180,7 +220,7 @@
         </ul>
       </div>
     </section>
-    <section class="offers wrapper" data-test="offers">
+    <section class="offers container-page" data-test="offers">
       <h2 class="offers__title">Акции</h2>
       <div class="offers__wrapper">
         <div class="offers__banner">
@@ -196,7 +236,7 @@
               <source media="(min-width: 1366px)" type="image/jpeg" srcset="img/girl-img-desktop.jpg 1x, img/girl-img-desktop@2x.jpg 2x" width="280" height="460">
               <source media="(min-width: 768px)" type="image/webp" srcset="img/girl-img-tablet.webp 1x, img/girl-img-tablet@2x.webp 2x" width="400" height="462">
               <source media="(min-width: 768px)" type="image/jpeg" srcset="img/girl-img-tablet.jpg 1x, img/girl-img-tablet@2x.jpg 2x" width="400" height="462">
-              <img class="games__image" src="img/girl-img.jpg" srcset="img/girl-img@2x.jpg 2x" width="320" height="360" alt="Девушка на фоне синего неба.">
+              <img class="offers__image" src="img/girl-img.jpg" srcset="img/girl-img@2x.jpg 2x" width="320" height="360" alt="Девушка на фоне синего неба.">
             </picture>
           </div>
         </div>
@@ -261,7 +301,7 @@
         </div>
       </div>
     </section>
-    <section class="reviews" data-test="reviews">
+    <section class="reviews container-page" data-test="reviews">
       <h2 class="reviews__title">Отзывы</h2>
       <div class="reviews__slider slider-reviews">
         <div class="slider-reviews__item">
@@ -295,19 +335,19 @@
         <h2 class="contacts__title">Контакты</h2>
         <address class="contacts__content">
           <div class="contacts__item">
-            <h3 class="contacts__item-title">Адрес:</h3>
+            <p class="contacts__item-title">Адрес:</p>
             <p class="contacts__item-text">г. Омск, ул. 60 лет Октября, 7</p>
           </div>
           <div class="contacts__item">
-            <h3 class="contacts__item-title">График работы:</h3>
+            <p class="contacts__item-title">График работы:</p>
             <p class="contacts__item-text">Пн-Вс: с 8:00 до 22:00</p>
           </div>
           <div class="contacts__item">
-            <h3 class="contacts__item-title">Телефон:</h3>
+            <p class="contacts__item-title">Телефон:</p>
             <a class="contacts__item-text" href="tel:+78005555555">8 800 555-55-55</a>
           </div>
           <div class="contacts__item">
-            <h3 class="contacts__item-title">Email:</h3>
+            <p class="contacts__item-title">Email:</p>
             <a class="contacts__item-text" href="mailto:oмск@supergym.ru">oмск@supergym.ru</a>
           </div>
         </address>
@@ -315,7 +355,7 @@
     </section>
   </main>
   <footer class="main-footer" data-test="footer">
-    <div class="footer__content container-page">
+    <div class="main-footer__content container-page">
       <a class="main-footer__logo" href="#">
         <svg width="100" height="20" role="img" aria-label="Логотип кампании">
           <use href="/__spritemap#sprite-logo"></use>
@@ -365,6 +405,7 @@
   </footer>
 
   <script type="module" src="js/main.js"></script>
+  <script src="js/vendor/swiper.js"></script>
 </body>
 
 </html>
