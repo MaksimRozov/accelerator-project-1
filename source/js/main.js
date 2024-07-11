@@ -5,7 +5,7 @@
 
 import { sliderJuryInit } from './modules/sliders/slider-jury';
 import { sliderReviewsInit } from './modules/sliders/slider-reviews';
-import { tabsInit } from './modules/tabs-init';
+import { tabsInit } from './modules/tabs';
 import { accordionInit } from './modules/accordion';
 
 // // Функция для загрузки iframe с видео

@@ -83,31 +83,81 @@
     <section class="price" data-test="price">
       <div class="price__content container-page">
         <h2 class="price__title">Абонементы</h2>
-        <div class="price__group-buttons">
-          <button class="price__button price__button--active" type="button">1 месяц</button>
-          <button class="price__button" type="button">6 месяцев</button>
-          <button class="price__button" type="button">12 месяцев</button>
+        <div class="tabs">
+          <div class="price__group-buttons">
+            <button class="price__button tabs__button price__button--active" type="button">1 месяц</button>
+            <button class="price__button tabs__button" type="button">6 месяцев</button>
+            <button class="price__button tabs__button" type="button">12 месяцев</button>
+          </div>
+          <div class="price__info">
+            <div class="tabs__content">
+              <ul class="price__list">
+                <li class="card-price">
+                  <h3 class="card-price__title">С тренером</h3>
+                  <p class="card-price__duration">12 занятий</p>
+                  <p class="card-price__price" data-price="5000">5000</p>
+                  <a class="card-price__button button button--main" href="#">Купить абонемент</a>
+                </li>
+                <li class="card-price">
+                  <h3 class="card-price__title">Дневной</h3>
+                  <p class="card-price__duration">с 8:00 до 17:00</p>
+                  <p class="card-price__price" data-price="1700">1700</p>
+                  <a class="card-price__button button button--main" href="#">Купить абонемент</a>
+                </li>
+                <li class="card-price">
+                  <h3 class="card-price__title">Полный день</h3>
+                  <p class="card-price__duration">с 8:00 до 22:00</p>
+                  <p class="card-price__price" data-price="2700">2700</p>
+                  <a class="card-price__button button button--main" href="#">Купить абонемент</a>
+                </li>
+              </ul>
+            </div>
+            <div class="tabs__content">
+              <ul class="price__list">
+                <li class="card-price">
+                  <h3 class="card-price__title">С тренером</h3>
+                  <p class="card-price__duration">12 занятий</p>
+                  <p class="card-price__price" data-price="5000">5000</p>
+                  <a class="card-price__button button button--main" href="#">Купить абонемент</a>
+                </li>
+                <li class="card-price">
+                  <h3 class="card-price__title">Дневной</h3>
+                  <p class="card-price__duration">с 8:00 до 17:00</p>
+                  <p class="card-price__price" data-price="1700">1700</p>
+                  <a class="card-price__button button button--main" href="#">Купить абонемент</a>
+                </li>
+                <li class="card-price">
+                  <h3 class="card-price__title">Полный день</h3>
+                  <p class="card-price__duration">с 8:00 до 22:00</p>
+                  <p class="card-price__price" data-price="2700">2700</p>
+                  <a class="card-price__button button button--main" href="#">Купить абонемент</a>
+                </li>
+              </ul>
+            </div>
+            <div class="tabs__content">
+              <ul class="price__list">
+                <li class="card-price">
+                  <h3 class="card-price__title">С тренером</h3>
+                  <p class="card-price__duration">12 занятий</p>
+                  <p class="card-price__price" data-price="5000">5000</p>
+                  <a class="card-price__button button button--main" href="#">Купить абонемент</a>
+                </li>
+                <li class="card-price">
+                  <h3 class="card-price__title">Дневной</h3>
+                  <p class="card-price__duration">с 8:00 до 17:00</p>
+                  <p class="card-price__price" data-price="1700">1700</p>
+                  <a class="card-price__button button button--main" href="#">Купить абонемент</a>
+                </li>
+                <li class="card-price">
+                  <h3 class="card-price__title">Полный день</h3>
+                  <p class="card-price__duration">с 8:00 до 22:00</p>
+                  <p class="card-price__price" data-price="2700">2700</p>
+                  <a class="card-price__button button button--main" href="#">Купить абонемент</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <ul class="price__list">
-          <li class="card-price">
-            <h3 class="card-price__title">С тренером</h3>
-            <p class="card-price__duration">12 занятий</p>
-            <p class="card-price__price" data-price="5000">5000</p>
-            <a class="card-price__button button button--main" href="#">Купить абонемент</a>
-          </li>
-          <li class="card-price">
-            <h3 class="card-price__title">Дневной</h3>
-            <p class="card-price__duration">с 8:00 до 17:00</p>
-            <p class="card-price__price" data-price="1700">1700</p>
-            <a class="card-price__button button button--main" href="#">Купить абонемент</a>
-          </li>
-          <li class="card-price">
-            <h3 class="card-price__title">Полный день</h3>
-            <p class="card-price__duration">с 8:00 до 22:00</p>
-            <p class="card-price__price" data-price="2700">2700</p>
-            <a class="card-price__button button button--main" href="#">Купить абонемент</a>
-          </li>
-        </ul>
       </div>
     </section>
     <section class="banner container-page">
@@ -270,15 +320,15 @@
     <section class="faq" data-test="faq">
       <div class="container-page">
         <h2 class="faq__title">Вопросы и ответы</h2>
-        <div class="faq__content">
+        <div class="faq__content tabs">
           <div class="faq__group-button">
-            <button class="faq__button faq__button--active" type="button" data-tab="one">Центр</button>
-            <button class="faq__button" type="button" data-tab="two">Абонемент</button>
-            <button class="faq__button" type="button" data-tab="three">Услуги</button>
-            <button class="faq__button" type="button" data-tab="four">Правила</button>
+            <button class="faq__button tabs__button faq__button--active" type="button" data-tab="one">Центр</button>
+            <button class="faq__button tabs__button" type="button" data-tab="two">Абонемент</button>
+            <button class="faq__button tabs__button" type="button" data-tab="three">Услуги</button>
+            <button class="faq__button tabs__button" type="button" data-tab="four">Правила</button>
           </div>
           <div class="faq__tab-content">
-            <ul class="faq__accordion accordion faq__accordion--active">
+            <ul class="faq__accordion accordion tabs__content tabs__content--active">
               <li class="accordion__item">
                 <div class="accordion__header">
                   <h3>Как стать членом<br> фитнес-центра?</h3>
@@ -324,7 +374,7 @@
                 </div>
               </li>
             </ul>
-            <ul class="faq__accordion accordion">
+            <ul class="faq__accordion accordion tabs__content">
               <li class="accordion__item">
                 <div class="accordion__header accordion__header--active">
                   <h3>Занятия с тренером входят в абонемент?</h3>
@@ -370,7 +420,7 @@
                 </div>
               </li>
             </ul>
-            <ul class="faq__accordion accordion">
+            <ul class="faq__accordion accordion tabs__content">
               <li class="accordion__item">
                 <div class="accordion__header">
                   <h3>Предлагает ли клуб услуги по консультированию по вопросам питания?</h3>
@@ -416,7 +466,7 @@
                 </div>
               </li>
             </ul>
-            <ul class="faq__accordion accordion">
+            <ul class="faq__accordion accordion tabs__content">
               <li class="accordion__item">
                 <div class="accordion__header accordion__header--active">
                   <h3>Есть в фитнес-центре дресс-код?</h3>
