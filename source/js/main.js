@@ -3,8 +3,10 @@
 // import {Navigation, Pagination} from "swiper/modules";
 // import 'swiper/css';
 
-import { sliderJuryInit } from './modules/slider-jury-init';
-import { sliderReviewsInit } from './modules/slider-reviews-init';
+import { sliderJuryInit } from './modules/sliders/slider-jury';
+import { sliderReviewsInit } from './modules/sliders/slider-reviews';
+import { tabsInit } from './modules/tabs-init';
+import { accordionInit } from './modules/accordion';
 
 // // Функция для загрузки iframe с видео
 // function loadVideo() {
@@ -22,5 +24,7 @@ window.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('load', () => {
     sliderJuryInit();
     sliderReviewsInit();
+    tabsInit();
+    accordionInit();
   });
 });

@@ -49,17 +49,37 @@
 }
 
 .accordion__header {
-  padding-right: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   padding-bottom: 21px;
   padding-top: 18px;
-  background-image: url("../../img/sprite/accordion-button-close.svg");
-
-  // background-image: url("../__spritemap#sprite-accordion-button-close-view");
   background-repeat: no-repeat;
   background-position: center right;
   background-size: 30px;
+}
+
+.accordion__button {
+  background-image: url("../__spritemap#sprite-accordion-button-close-view");
+  width: 42px;
+  height: 42px;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  cursor: pointer;
+}
+
+.accordion__item--active .accordion__button {
+  background-image: url("../__spritemap#sprite-accordion-button-open-view");
+}
+
+.accordion__content {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 10px;
+  transition: max-height 0.3s ease-out;
 
   &--active {
-    background-image: url("../../img/sprite/accordion-button-open.svg");
+    max-height: 200px;
   }
 }

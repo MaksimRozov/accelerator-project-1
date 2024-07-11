@@ -34,9 +34,10 @@
         </div>
         <div class="hero__image">
           <picture>
-            <source type="image/jpeg" media="(min-width: 1365px)" width="500" height="524" srcset="img/hero-img-desktop.jpg 1x, img/hero-img-desktop2x.jpg 2x">
-            <source type="image/jpeg" media="(min-width: 767px)" width="324" height="390" srcset="img/hero-img.jpg 1x, img/hero-img2x.jpg 2x">
-            <img width="324" height="390" src="img/hero-img.jpg" srcset="img/hero-img2x.jpg 2x" alt="Молодой человек в футболке с логотипом на груди.">
+            <source media="(min-width: 1365px)" type="image/webp" width="500" height="524" srcset="img/hero-img-desktop.webp 1x, img/hero-img-desktop@2x.webp 2x">
+            <source media="(min-width: 1365px)" type="image/jpeg" width="500" height="524" srcset="img/hero-img-desktop.jpg 1x, img/hero-img-desktop@2x.jpg 2x">
+            <source type="image/webp" width="324" height="390" srcset="img/hero-img.webp 1x, img/hero-img@2x.webp 2x">
+            <img width="324" height="390" src="img/hero-img.jpg" srcset="img/hero-img@2x.jpg 2x" alt="Молодой человек в футболке с логотипом S на груди.">
           </picture>
         </div>
       </div>
@@ -55,15 +56,23 @@
         <div class="about__image-content">
           <div class="about__image">
             <picture>
-              <source media="(min-width: 1366px)" type="image/webp" srcset="img/gym-desktop@1x.webp 1x, img/gym-desktop@2x.webp 2x" width="660" height="400">
+              <source media="(min-width: 1366px)" type="image/webp" srcset="img/gym-desktop.webp 1x, img/gym-desktop@2x.webp 2x" width="660" height="400">
               <source media="(min-width: 1366px)" type="image/jpeg" srcset="img/gym-desktop.jpg 1x, img/gym-desktop@2x.jpg 2x" width="660" height="400">
               <source media="(min-width: 768px)" type="image/webp" srcset="img/gym-tablet.webp 1x, img/gym-tablet@2x.webp 2x" width="678" height="345">
               <source media="(min-width: 768px)" type="image/jpeg" srcset="img/gym-tablet.jpg 1x, img/gym-tablet@2x.jpg 2x" width="678" height="345">
-              <img src="img/gym.jpg" srcset="img/gym.webp" width="320" height="280" alt="Спортивный зал с разными тренажерами.">
+              <source type="image/webp" srcset="img/gym-desktop.webp 1x, img/gym-desktop@2x.webp 2x" width="320" height="280">
+              <img src="img/gym.jpg" srcset="img/gym@2x.jpg 2x" width="320" height="280" alt="Спортивный зал с разными тренажерами.">
             </picture>
           </div>
           <div class="about__video">
-            <img src="img/video-preview.jpg" srcset="img/video-preview.webp" width="320" height="170" alt="Спортивный зал с разными тренажерами.">
+            <picture>
+              <source media="(min-width: 1366px)" type="image/webp" srcset="img/video-preview-desktop.webp 1x, img/video-preview-desktop@2x.webp 2x" width="230" height="400">
+              <source media="(min-width: 1366px)" type="image/jpeg" srcset="img/video-preview-desktop.jpg 1x, img/video-preview-desktop@2x.jpg 2x" width="360" height="230">
+              <source media="(min-width: 768px)" type="image/webp" srcset="img/video-preview-tablet.webp 1x, img/video-preview-tablet@2x.webp 2x" width="270" height="170">
+              <source media="(min-width: 768px)" type="image/jpeg" srcset="img/video-preview-tablet.jpg 1x, img/video-preview-tablet@2x.jpg 2x" width="270" height="170">
+              <source type="image/webp" srcset="img/video-preview.webp 1x, img/video-preview@2x.webp 2x" width="270" height="170">
+              <img src="img/video-preview.jpg" srcset="img/video-preview@2x.jpg 2x" width="320" height="170" alt="Спортивный зал с разными тренажерами.">
+            </picture>
             <button class="about__video-button" type="button">
               <span class="visually-hidden">Воспроизвести видео</span>
             </button>
@@ -127,6 +136,7 @@
           <source media="(min-width: 1366px)" type="image/jpeg" srcset="img/games-desktop.jpg 1x, img/games-desktop@2x.jpg 2x" width="660" height="400">
           <source media="(min-width: 768px)" type="image/webp" srcset="img/games-tablet.webp 1x, img/games-tablet@2x.webp 2x" width="678" height="345">
           <source media="(min-width: 768px)" type="image/jpeg" srcset="img/games-tablet.jpg 1x, img/games-tablet@2x.jpg 2x" width="678" height="345">
+          <source type="image/webp" srcset="img/games.webp 1x, img/games@2x.webp 2x" width="290" height="290">
           <img class="games__image" src="img/games.jpg" srcset="img/games@2x.jpg 2x" width="290" height="290" alt="Мужчина выбивает рукой белые брызги на фиолетовом фоне.">
         </picture>
       </article>
@@ -238,6 +248,7 @@
               <source media="(min-width: 1366px)" type="image/jpeg" srcset="img/girl-img-desktop.jpg 1x, img/girl-img-desktop@2x.jpg 2x" width="280" height="460">
               <source media="(min-width: 768px)" type="image/webp" srcset="img/girl-img-tablet.webp 1x, img/girl-img-tablet@2x.webp 2x" width="400" height="462">
               <source media="(min-width: 768px)" type="image/jpeg" srcset="img/girl-img-tablet.jpg 1x, img/girl-img-tablet@2x.jpg 2x" width="400" height="462">
+              <source type="image/webp" srcset="img/girl-img.webp 1x, img/girl-img@2x.webp 2x" width="400" height="462">
               <img class="offers__image" src="img/girl-img.jpg" srcset="img/girl-img@2x.jpg 2x" width="320" height="360" alt="Девушка на фоне синего неба.">
             </picture>
           </div>
@@ -261,69 +272,214 @@
         <h2 class="faq__title">Вопросы и ответы</h2>
         <div class="faq__content">
           <div class="faq__group-button">
-            <button class="faq__button faq__button--active" type="button">Центр</button>
-            <button class="faq__button" type="button">Абонемент</button>
-            <button class="faq__button" type="button">Услуги</button>
-            <button class="faq__button" type="button">Правила</button>
+            <button class="faq__button faq__button--active" type="button" data-tab="one">Центр</button>
+            <button class="faq__button" type="button" data-tab="two">Абонемент</button>
+            <button class="faq__button" type="button" data-tab="three">Услуги</button>
+            <button class="faq__button" type="button" data-tab="four">Правила</button>
           </div>
-          <ul class="faq__accordion accordion">
-            <li class="accordion__item">
-              <div class="accordion__header accordion__header--active">
-                <h3>Как стать членом<br> фитнес-центра?</h3>
-              </div>
-              <div class="accordion__content">
-                <p>При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор.<br> При покупке абонемента онлайн, анкета также заполняется онлайн<br> и договор придёт вам на почту.</p>
-              </div>
-            </li>
-            <li class="accordion__item">
-              <div class="accordion__header">
-                <h3>Где можно посмотреть расписание?</h3>
-              </div>
-              <div class="accordion__content">
-                <!-- <p>При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придёт вам на почту.</p> -->
-              </div>
-            </li>
-            <li class="accordion__item">
-              <div class="accordion__header">
-                <h3>Есть кулеры в центре? Предоставляются полотенца?</h3>
-              </div>
-              <div class="accordion__content">
-                <!-- <p>При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придёт вам на почту.</p> -->
-              </div>
-            </li>
-            <li class="accordion__item">
-              <div class="accordion__header">
-                <h3>Сколько тренеров работает в клубе и какова<br> их квалификация?</h3>
-              </div>
-              <div class="accordion__content">
-                <!-- <p>При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придёт вам на почту.</p> -->
-              </div>
-            </li>
-          </ul>
+          <div class="faq__tab-content">
+            <ul class="faq__accordion accordion faq__accordion--active">
+              <li class="accordion__item">
+                <div class="accordion__header">
+                  <h3>Как стать членом<br> фитнес-центра?</h3>
+                  <button class="accordion__button accordion__button--active" type="button">
+                    <span class="visually-hidden">Открыть</span>
+                  </button>
+                </div>
+                <div class="accordion__content">
+                  <p>При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор.<br> При покупке абонемента онлайн, анкета также заполняется онлайн<br> и договор придёт вам на почту.</p>
+                </div>
+              </li>
+              <li class="accordion__item">
+                <div class="accordion__header">
+                  <h3>Где можно посмотреть расписание?</h3>
+                  <button class="accordion__button" type="button">
+                    <span class="visually-hidden">Открыть</span>
+                  </button>
+                </div>
+                <div class="accordion__content">
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium ullam, magni placeat, pariatur obcaecati et iusto quas amet mollitia ex impedit at illo dolores est, consequatur fugit vitae tempore error.</p>
+                </div>
+              </li>
+              <li class="accordion__item">
+                <div class="accordion__header">
+                  <h3>Есть кулеры в центре? Предоставляются полотенца?</h3>
+                  <button class="accordion__button" type="button">
+                    <span class="visually-hidden">Открыть</span>
+                  </button>
+                </div>
+                <div class="accordion__content">
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium perferendis voluptates ea alias rerum iusto fuga praesentium tempore labore incidunt soluta vel voluptate sint iste, molestias, culpa saepe error assumenda!</p>
+                </div>
+              </li>
+              <li class="accordion__item">
+                <div class="accordion__header">
+                  <h3>Сколько тренеров работает в клубе и какова<br> их квалификация?</h3>
+                  <button class="accordion__button" type="button">
+                    <span class="visually-hidden">Открыть</span>
+                  </button>
+                </div>
+                <div class="accordion__content">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, vel distinctio veniam minus consectetur excepturi molestias voluptas alias reiciendis consequatur quam cum saepe maiores, mollitia vero ab quibusdam ducimus placeat.</p>
+                </div>
+              </li>
+            </ul>
+            <ul class="faq__accordion accordion">
+              <li class="accordion__item">
+                <div class="accordion__header accordion__header--active">
+                  <h3>Занятия с тренером входят в абонемент?</h3>
+                  <button class="accordion__button accordion__button--active" type="button">
+                    <span class="visually-hidden">Открыть</span>
+                  </button>
+                </div>
+                <div class="accordion__content">
+                  <p>При посещении тренажерного зала вам необходимо оплатить занятия с тренером отдельно. В зале всегда присутствует дежурный тренер, которому можно задать вопрос, получить небольшую консультацию по тренажеру или технике выполнения упражнения.</p>
+                </div>
+              </li>
+              <li class="accordion__item">
+                <div class="accordion__header">
+                  <h3>Можно ли заморозить абонемент?</h3>
+                  <button class="accordion__button" type="button">
+                    <span class="visually-hidden">Открыть</span>
+                  </button>
+                </div>
+                <div class="accordion__content">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat odio reiciendis iusto quibusdam, quod laudantium nostrum quidem natus tempora in voluptas perspiciatis voluptatum ullam omnis aspernatur? Eius inventore sapiente pariatur?</p>
+                </div>
+              </li>
+              <li class="accordion__item">
+                <div class="accordion__header">
+                  <h3>Есть ли лимит по посещениям тренажерного зала и групповых занятий?</h3>
+                  <button class="accordion__button" type="button">
+                    <span class="visually-hidden">Открыть</span>
+                  </button>
+                </div>
+                <div class="accordion__content">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, quo repellendus dolore incidunt officia nam nobis modi reiciendis porro fugiat ipsum commodi. Ad autem perferendis doloribus qui earum tempora officia!</p>
+                </div>
+              </li>
+              <li class="accordion__item">
+                <div class="accordion__header">
+                  <h3>Что такое семейный доступ и доступ для друзей?</h3>
+                  <button class="accordion__button" type="button">
+                    <span class="visually-hidden">Открыть</span>
+                  </button>
+                </div>
+                <div class="accordion__content">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus nemo quasi dignissimos veritatis reiciendis consectetur eaque ullam numquam ab, nobis omnis repudiandae impedit, ipsa eum iste nam quia fugiat repellat.</p>
+                </div>
+              </li>
+            </ul>
+            <ul class="faq__accordion accordion">
+              <li class="accordion__item">
+                <div class="accordion__header">
+                  <h3>Предлагает ли клуб услуги по консультированию по вопросам питания?</h3>
+                  <button class="accordion__button accordion__button--active" type="button">
+                    <span class="visually-hidden">Открыть</span>
+                  </button>
+                </div>
+                <div class="accordion__content">
+                  <p>Да. Вы можете обратиться как к своему тренеру, так и к нашему нутрициологу. Специалист уточнит ваши данные, цели и предложит программу питания.</p>
+                </div>
+              </li>
+              <li class="accordion__item">
+                <div class="accordion__header">
+                  <h3>Проводятся ли в клубе какие-либо мероприятия или соревнования?</h3>
+                  <button class="accordion__button" type="button">
+                    <span class="visually-hidden">Открыть</span>
+                  </button>
+                </div>
+                <div class="accordion__content">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam rerum architecto excepturi eum perspiciatis, veniam a eligendi exercitationem minus ut corporis alias natus iure voluptatem, laboriosam, maiores ea commodi quos.</p>
+                </div>
+              </li>
+              <li class="accordion__item">
+                <div class="accordion__header">
+                  <h3>Можно ли приобрести в центре спортивное питание?</h3>
+                  <button class="accordion__button" type="button">
+                    <span class="visually-hidden">Открыть</span>
+                  </button>
+                </div>
+                <div class="accordion__content">
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia sint sed assumenda enim culpa consequatur expedita dolores temporibus molestias labore. Eos dolores est tenetur accusamus ipsum reiciendis, praesentium a maiores?</p>
+                </div>
+              </li>
+              <li class="accordion__item">
+                <div class="accordion__header">
+                  <h3>Есть ли в центре детская комната?</h3>
+                  <button class="accordion__button" type="button">
+                    <span class="visually-hidden">Открыть</span>
+                  </button>
+                </div>
+                <div class="accordion__content">
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates quam minus, asperiores temporibus at, quos rem neque modi cupiditate inventore voluptas odio laboriosam possimus eum exercitationem animi? Reiciendis, iste voluptates?</p>
+                </div>
+              </li>
+            </ul>
+            <ul class="faq__accordion accordion">
+              <li class="accordion__item">
+                <div class="accordion__header accordion__header--active">
+                  <h3>Есть в фитнес-центре дресс-код?</h3>
+                  <button class="accordion__button accordion__button--active" type="button">
+                    <span class="visually-hidden">Открыть</span>
+                  </button>
+                </div>
+                <div class="accordion__content">
+                  <p>Для тренировок необходимо иметь предназначенную для этого закрытую спортивную обувь и одежду. Верхняя и нижняя части тела должны быть закрыты (используйте футболки, майки, спортивные брюки, шорты, кроссовки). В целях безопасности, запрещается тренироваться босиком, в пляжных или домашних тапочках и т. п., исключения составляют специальные классы (например, йога, пилатес).</p>
+                </div>
+              </li>
+              <li class="accordion__item">
+                <div class="accordion__header">
+                  <h3>Можно ли приводить с собой детей на тренировки?</h3>
+                  <button class="accordion__button" type="button">
+                    <span class="visually-hidden">Открыть</span>
+                  </button>
+                </div>
+                <div class="accordion__content">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A ad sit quae vero officiis optio! Error minima consequatur voluptatem. Delectus consequuntur eligendi ipsa enim quam corrupti, ad quasi eum nam.</p>
+                </div>
+              </li>
+              <li class="accordion__item">
+                <div class="accordion__header">
+                  <h3>Какие дополнительные правила посещения центра?</h3>
+                  <button class="accordion__button" type="button">
+                    <span class="visually-hidden">Открыть</span>
+                  </button>
+                </div>
+                <div class="accordion__content">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio ut minus laboriosam impedit. Pariatur rerum provident vitae mollitia quis eos quo maiores aperiam sequi consequuntur, obcaecati quidem qui voluptates! Possimus!</p>
+                </div>
+              </li>
+              <li class="accordion__item">
+                <div class="accordion__header">
+                  <h3>Нужна ли медицинская справка для посещения залов и бассейна?</h3>
+                  <button class="accordion__button" type="button">
+                    <span class="visually-hidden">Открыть</span>
+                  </button>
+                </div>
+                <div class="accordion__content">
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod repellendus pariatur excepturi eveniet beatae nesciunt perspiciatis animi sint similique obcaecati quaerat labore earum quibusdam rem repudiandae iusto corrupti, at dolores.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
     <section class="reviews container-page" data-test="reviews">
       <h2 class="reviews__title">Отзывы</h2>
-      <!-- <div class="reviews__slider slider-reviews">
-        <div class="slider-reviews__item">
-          <div class="slider-reviews__image">
-            <img src="img/avatar.png" srcset="img/avatar.webp" width="68" height="68" alt="Аватар">
-          </div>
-          <h3>Анна Орлова</h3>
-          <p>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
-        </div>
-      </div> -->
       <div class="reviews__slider">
-        <!-- Slider main container -->
         <div class="reviews-slider swiper">
-          <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
-            <!-- Slides -->
             <div class="swiper-slide">
               <div class="slider-reviews__item">
                 <div class="slider-reviews__image">
-                  <img src="img/avatar.png" srcset="img/avatar.webp" width="68" height="68" alt="Аватар">
+                  <picture>
+                    <source media="(min-width: 768px)" type="image/webp" srcset="img/review-tablet.webp 1x, img/review-tablet@2x.webp 2x" width="80" height="80">
+                    <source media="(min-width: 768px)" type="image/jpeg" srcset="img/review-tablet.jpg 1x, img/review-tablet@2x.jpg 2x" width="80" height="80">
+                    <source type="image/webp" srcset="img/review.webp 1x, img/review@2x.webp 2x" width="68" height="68">
+                    <img class="offers__image" src="img/review.jpg" srcset="img/review@2x.jpg 2x" width="68" height="68" alt="Аватар пользователя.">
+                  </picture>
                 </div>
                 <h3>Анна Орлова</h3>
                 <p>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
@@ -332,7 +488,12 @@
             <div class="swiper-slide">
               <div class="slider-reviews__item">
                 <div class="slider-reviews__image">
-                  <img src="img/avatar.png" srcset="img/avatar.webp" width="68" height="68" alt="Аватар">
+                  <picture>
+                    <source media="(min-width: 768px)" type="image/webp" srcset="img/review-tablet.webp 1x, img/review-tablet@2x.webp 2x" width="80" height="80">
+                    <source media="(min-width: 768px)" type="image/jpeg" srcset="img/review-tablet.jpg 1x, img/review-tablet@2x.jpg 2x" width="80" height="80">
+                    <source type="image/webp" srcset="img/review.webp 1x, img/review@2x.webp 2x" width="68" height="68">
+                    <img class="offers__image" src="img/review.jpg" srcset="img/review@2x.jpg 2x" width="68" height="68" alt="Аватар пользователя.">
+                  </picture>
                 </div>
                 <h3>Анна Орлова</h3>
                 <p>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
@@ -341,21 +502,27 @@
             <div class="swiper-slide">
               <div class="slider-reviews__item">
                 <div class="slider-reviews__image">
-                  <img src="img/avatar.png" srcset="img/avatar.webp" width="68" height="68" alt="Аватар">
+                  <picture>
+                    <source media="(min-width: 768px)" type="image/webp" srcset="img/review-tablet.webp 1x, img/review-tablet@2x.webp 2x" width="80" height="80">
+                    <source media="(min-width: 768px)" type="image/png" srcset="img/review-tablet.png 1x, img/review-tablet@2x.png 2x" width="80" height="80">
+                    <source type="image/webp" srcset="img/review.webp 1x, img/review@2x.webp 2x" width="68" height="68">
+                    <img class="offers__image" src="img/review.png" srcset="img/review@2x.png 2x" width="68" height="68" alt="Аватар пользователя.">
+                  </picture>
                 </div>
                 <h3>Анна Орлова</h3>
                 <p>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
               </div>
             </div>
           </div>
-
         </div>
-        <button class="reviews__button reviews__button--prev" type="button">
-          <span class="visually-hidden">Назад</span>
-        </button>
-        <button class="reviews__button reviews__button--next" type="button">
-          <span class="visually-hidden">Вперед</span>
-        </button>
+        <div class="swiper-navigation">
+          <button class="reviews__button reviews__button--prev " type="button">
+            <span class="visually-hidden">Назад</span>
+          </button>
+          <button class="reviews__button reviews__button--next" type="button">
+            <span class="visually-hidden">Вперед</span>
+          </button>
+        </div>
       </div>
     </section>
     <section class="form" data-test="form">

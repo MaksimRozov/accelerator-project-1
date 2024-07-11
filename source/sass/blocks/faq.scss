@@ -47,6 +47,7 @@
   background: none;
   padding: 14px 22px;
   box-sizing: border-box;
+  cursor: pointer;
 
   &--active {
     background: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
@@ -59,5 +60,13 @@
 
   @media (min-width: $desktop-width) {
     min-height: 54px;
+  }
+}
+
+.faq__accordion {
+  display: none;
+
+  &--active {
+    display: block;
   }
 }
