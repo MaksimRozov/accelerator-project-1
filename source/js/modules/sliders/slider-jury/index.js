@@ -10,8 +10,12 @@ const sliderJuryInit = () => {
       modules: [Navigation],
       grabCursor: false,
       watchOverflow: false,
-      speed: 500,
+      speed: 1000,
       loop: true,
+      navigation: {
+        nextEl: '.jury__button--next',
+        prevEl: '.jury__button--prev',
+      },
 
       breakpoints: {
         320: {
@@ -24,10 +28,7 @@ const sliderJuryInit = () => {
           spaceBetween: 40,
           initialSlide: 2,
           simulateTouch: false,
-          navigation: {
-            nextEl: '.jury__button--next',
-            prevEl: '.jury__button--prev',
-          },
+
         },
 
         1366: {

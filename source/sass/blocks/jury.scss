@@ -1,5 +1,5 @@
 .jury {
-  padding-top: 40px;
+  padding-top: 41px;
   padding-bottom: 41px;
 }
 
@@ -23,6 +23,7 @@
   transform: translateY(-50%);
   z-index: 1;
   cursor: pointer;
+  display: none;
 
   &--next {
     mask-image: url("../__spritemap#sprite-slider-arrow-right-view");
@@ -32,5 +33,9 @@
   &--prev {
     mask-image: url("../__spritemap#sprite-slider-arrow-left-view");
     left: -36px;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: block;
   }
 }

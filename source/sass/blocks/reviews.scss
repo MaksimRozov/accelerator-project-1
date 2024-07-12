@@ -1,18 +1,17 @@
 .reviews__title {
   @include main-title;
 
-  margin-bottom: 38px;
+  margin-bottom: 39px;
 }
 
 .reviews {
-  padding-top: 40px;
+  padding-top: 41px;
 }
 
 .reviews__slider {
   margin: 0 auto;
-  margin-bottom: 41px;
+  padding-bottom: 40px;
   position: relative;
-  width: 503px;
 }
 
 .reviews .reviews__title {
@@ -31,6 +30,7 @@
   transform: translateY(-50%);
   z-index: 1;
   cursor: pointer;
+  display: none;
 
   &--next {
     mask-image: url("../__spritemap#sprite-slider-arrow-right-view");
@@ -40,5 +40,17 @@
   &--prev {
     mask-image: url("../__spritemap#sprite-slider-arrow-left-view");
     left: -36px;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: block;
+
+    &--next {
+      right: 0;
+    }
+
+    &--prev {
+      left: 0;
+    }
   }
 }

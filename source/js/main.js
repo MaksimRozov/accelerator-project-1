@@ -8,16 +8,16 @@ import { sliderReviewsInit } from './modules/sliders/slider-reviews';
 import { tabsInit } from './modules/tabs';
 import { accordionInit } from './modules/accordion';
 
-// // Функция для загрузки iframe с видео
-// function loadVideo() {
-//   const videoContainer = document.querySelector('.about__image');
-//   videoContainer.innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/watch?v=9TZXsZItgdw" frameborder="0" allowfullscreen></iframe>';
-// }
+// Функция для загрузки iframe с видео
+function loadVideo() {
+  const videoContainer = document.querySelector('.about__video');
+  videoContainer.innerHTML = '<iframe width="360" height="230" src="https://www.youtube.com/embed/9TZXsZItgdw?si=MO3SEu-LfrbBN-_P" loading="lazy"  frameborder="0" allowfullscreen></iframe>';
+}
 
-// // Добавляем обработчик события на кнопку "Play Video"
-// document.querySelector('.about__video-button').addEventListener('click', () => {
-//   loadVideo(); // Вызываем функцию загрузки видео
-// });
+// Добавляем обработчик события на кнопку "Play Video"
+document.querySelector('.about__video-button').addEventListener('click', () => {
+  loadVideo(); // Вызываем функцию загрузки видео
+});
 
 
 window.addEventListener('DOMContentLoaded', () => {

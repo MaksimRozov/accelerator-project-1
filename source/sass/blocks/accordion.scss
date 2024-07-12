@@ -49,11 +49,13 @@
 }
 
 .accordion__header {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 30px;
+  gap: 22px;
   align-items: center;
   justify-content: space-between;
-  padding-bottom: 21px;
-  padding-top: 18px;
+  padding-bottom: 20px;
+  padding-top: 20px;
   background-repeat: no-repeat;
   background-position: center right;
   background-size: 30px;
@@ -61,8 +63,8 @@
 
 .accordion__button {
   background-image: url("../__spritemap#sprite-accordion-button-close-view");
-  width: 42px;
-  height: 42px;
+  width: 30px;
+  height: 30px;
   border: none;
   background-color: transparent;
   padding: 0;
@@ -76,7 +78,6 @@
 .accordion__content {
   max-height: 0;
   overflow: hidden;
-  padding: 0 10px;
   transition: max-height 0.3s ease-out;
 
   &--active {

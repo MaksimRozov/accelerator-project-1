@@ -1,13 +1,13 @@
 .main-footer {
   background-color: #030a1a;
   padding-top: 40px;
-  padding-bottom: 44px;
+  padding-bottom: 40px;
 }
 
 .main-footer__content {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 23px;
+  gap: 29px;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: max-content max-content 95px;

@@ -1,4 +1,7 @@
 .form {
+  padding-right: 0;
+  padding-left: 0;
+
   form {
     @media (min-width: $tablet-width) {
       width: 440px;
@@ -15,7 +18,7 @@
 
 .form__content {
   background-color: $main-color;
-  padding-top: 70px;
+  padding-top: 71px;
   padding-bottom: 70px;
   padding-left: 15px;
   padding-right: 15px;
@@ -28,7 +31,7 @@
   line-height: 100%;
   color: #ffffff;
   font-family: $secondary-font;
-  margin-bottom: 36px;
+  margin-bottom: 31px;
 
   @media (min-width: $tablet-width) {
     font-size: 54px;
@@ -55,8 +58,9 @@
   background-color: transparent;
   border: none;
   border-bottom: 1px solid #74819c;
-  height: 27px;
-  margin-bottom: 36px;
+  height: 31px;
+  padding-left: 0;
+  margin-bottom: 32px;
 
   &::placeholder {
     font-weight: 300;
@@ -73,4 +77,5 @@
 
 .form__button {
   width: 100%;
+  margin-top: 4px;
 }

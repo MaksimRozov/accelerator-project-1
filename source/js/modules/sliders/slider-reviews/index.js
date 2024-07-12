@@ -1,7 +1,7 @@
 import Swiper from 'swiper';
 import { Navigation } from 'swiper/modules';
 
-const reviewsSlider = document.querySelector('.reviews-slider');
+const reviewsSlider = document.querySelector('.reviews__slider');
 
 const sliderReviewsInit = () => {
   if (reviewsSlider) {
@@ -10,8 +10,11 @@ const sliderReviewsInit = () => {
       modules: [Navigation],
       grabCursor: false,
       watchOverflow: false,
-      speed: 500,
-      loop: true,
+      speed: 1000,
+      navigation: {
+        nextEl: '.reviews__button--next',
+        prevEl: '.reviews__button--prev',
+      },
 
       breakpoints: {
         320: {
@@ -24,18 +27,13 @@ const sliderReviewsInit = () => {
           spaceBetween: 40,
           initialSlide: 1,
           simulateTouch: false,
-          navigation: {
-            nextEl: '.reviews__button--next',
-            prevEl: '.reviews__button--prev',
-          },
         },
 
         1366: {
           slidesPerView: 1,
           spaceBetween: 40,
         }
-      },
-
+      }
     });
   }
 };

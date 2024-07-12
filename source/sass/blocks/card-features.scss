@@ -7,7 +7,7 @@
   background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: center;
-  margin-bottom: 11px;
+  margin-bottom: 13px;
 
   span {
     font-weight: 400;
@@ -37,6 +37,7 @@
     font-size: 18px;
     line-height: 111%;
     margin: 0;
+    margin-bottom: 11px;
 
     @media (min-width: $tablet-width) {
       font-size: 20px;
@@ -52,6 +53,7 @@
     font-weight: 300;
     font-size: 14px;
     line-height: 157%;
+    margin: 0;
 
     @media (min-width: $tablet-width) {
       font-size: 16px;
@@ -71,11 +73,12 @@
 .card-features.card-features--second {
   background-color: #1c3374;
   padding-top: 30px;
-  padding-bottom: 25px;
+  padding-bottom: 39px;
   padding-left: 75px;
   padding-right: 75px;
   color: #ffffff;
-  margin-bottom: 20px;
+  margin-bottom: 6px;
+  margin-top: 4px;
   text-align: center;
 
   p:first-child {

@@ -1,6 +1,8 @@
 .contacts {
-  padding-top: 40px;
+  padding-top: 37px;
   padding-bottom: 37px;
+  padding-right: 15px;
+  padding-left: 15px;
 
   @media (min-width: $tablet-width) {
     padding-left: 103px;
@@ -41,7 +43,7 @@
   @include main-title;
 
   text-align: left;
-  margin-bottom: 36px;
+  margin-bottom: 38px;
 }
 
 .contacts .contacts__title {
@@ -86,6 +88,7 @@
 }
 
 .contacts__item-text {
+  font-weight: 400;
   font-size: 14px;
   line-height: 143%;
   color: #102654;

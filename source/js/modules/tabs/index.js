@@ -1,7 +1,7 @@
-const tabParent = document.querySelectorAll('.tabs');
+const tabParentElement = document.querySelectorAll('.tabs');
 
 const tabsInit = () => {
-  tabParent.forEach((parent, indexParent) => {
+  tabParentElement.forEach((parent, indexParent) => {
     parent.setAttribute('id', `tabs-${indexParent + 1}`);
     const parentId = parent.getAttribute('id');
     const parentById = document.querySelector(`#${parentId}`);
@@ -44,7 +44,6 @@ const tabsInit = () => {
               itemContent.style.display = 'block';
             } else {
               itemContent.style.display = 'none';
-
             }
           });
         });

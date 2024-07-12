@@ -1,10 +1,16 @@
 .price {
   background-color: #f8f9fc;
-  padding-top: 80px;
+  padding-top: 41px;
   padding-bottom: 40px;
 
   @media (min-width: $tablet-width) {
-    background-image: url("../../img/bg-rogue.png");
+    /* stylelint-disable-next-line @stylistic/declaration-colon-newline-after */
+    background-image: image-set(
+      url("../../img/bg-rogue.png") type("image/jpeg") 1x,
+      url("../../img/bg-rogue@2x.png") type("image/jpeg") 2x,
+      url("../../img/bg-rogue.webp") type("image/webp") 1x,
+      url("../../img/bg-rogue@2x.webp") type("image/webp") 2x
+    );
     background-position: bottom right;
     background-repeat: no-repeat;
   }
@@ -73,7 +79,7 @@
 
   display: grid;
   grid-template-columns: 1fr;
-  gap: 35px;
+  gap: 36px;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 380px;

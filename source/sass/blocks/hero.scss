@@ -20,7 +20,7 @@
 .hero__list {
   @include list-style-none;
 
-  line-height: 143%;
+  line-height: 136%;
   text-align: right;
   align-self: self-end;
 
@@ -47,13 +47,17 @@
   }
 }
 
+.hero__item {
+  margin-top: 1px;
+}
+
 .hero__title {
   margin: 0;
   font-family: $secondary-font;
   font-weight: 800;
   font-size: 62px;
   line-height: 100%;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.01em;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
@@ -72,7 +76,7 @@
 .hero__content {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  column-gap: 20px;
+  column-gap: 24px;
   row-gap: 48px;
 
   @media (min-width: $tablet-width) {
