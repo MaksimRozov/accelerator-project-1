@@ -1,16 +1,30 @@
 .jury {
   padding-top: 41px;
   padding-bottom: 41px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 30px;
+    padding-bottom: 60px;
+  }
 }
 
 .jury__title {
   @include main-title;
 
   margin-bottom: 19px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 54px;
+    margin-bottom: 46px;
+  }
 }
 
 .jury__slider {
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 45px;
+  }
 }
 
 .jury__button {
@@ -37,5 +51,13 @@
 
   @media (min-width: $tablet-width) {
     display: block;
+
+    &--next {
+      right: 6px;
+    }
+
+    &--prev {
+      left: 5px;
+    }
   }
 }

@@ -25,8 +25,7 @@ const sliderJuryInit = () => {
 
         768: {
           slidesPerView: 2,
-          spaceBetween: 40,
-          initialSlide: 2,
+          spaceBetween: 10,
           simulateTouch: false,
 
         },

@@ -19,5 +19,13 @@
     border: 2px solid #ffffff;
     padding: 22px 10px;
     color: #ffffff;
+
+    @media (min-width: $tablet-width) {
+      height: 52px;
+      display: flex;
+      padding: 0;
+      align-items: center;
+      justify-content: center;
+    }
   }
 }

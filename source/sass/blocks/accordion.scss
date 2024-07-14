@@ -35,8 +35,14 @@
     padding-right: 36px;
 
     @media (min-width: $tablet-width) {
+      padding-right: 122px;
+      line-height: 133%;
       font-size: 18px;
     }
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 5px;
   }
 }
 
@@ -54,11 +60,38 @@
   gap: 22px;
   align-items: center;
   justify-content: space-between;
-  padding-bottom: 20px;
   padding-top: 20px;
+  padding-bottom: 20px;
   background-repeat: no-repeat;
   background-position: center right;
   background-size: 30px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr 40px;
+    padding-top: 25.1px;
+    padding-bottom: 12px;
+  }
+}
+
+.accordion__item:first-child .accordion__header {
+  @media (min-width: $tablet-width) {
+    padding-top: 24px;
+    padding-bottom: 11px;
+  }
+}
+
+.accordion__item:not(:first-child) .accordion__header {
+  @media (min-width: $tablet-width) {
+    padding-top: 21.2px;
+    padding-bottom: 21.5px;
+  }
+}
+
+.accordion__item:nth-child(3) .accordion__header {
+  @media (min-width: $tablet-width) {
+    padding-top: 20.5px;
+    padding-bottom: 21.3px;
+  }
 }
 
 .accordion__button {
@@ -69,6 +102,12 @@
   background-color: transparent;
   padding: 0;
   cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+    margin-top: -1px;
+  }
 }
 
 .accordion__item--active .accordion__button {
@@ -82,5 +121,11 @@
 
   &--active {
     max-height: 200px;
+  }
+
+  @media (min-width: $tablet-width) {
+    br {
+      display: none;
+    }
   }
 }

@@ -2,6 +2,11 @@
   padding-top: 71px;
   padding-bottom: 70px;
   background-color: #f8f9fc;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 61px;
+    padding-bottom: 55px;
+  }
 }
 
 .faq__content {
@@ -16,6 +21,10 @@
   @include main-title;
 
   margin-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 44px;
+  }
 }
 
 .faq__group-button {
@@ -26,6 +35,7 @@
 
   @media (min-width: $tablet-width) {
     grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 45px;
   }
 
   @media (min-width: $desktop-width) {
@@ -56,6 +66,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
+    padding: 17px 22px;
   }
 
   @media (min-width: $desktop-width) {

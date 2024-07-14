@@ -24,6 +24,10 @@
 }
 
 .games__button {
+  @media (min-width: $tablet-width) {
+    min-height: 62px;
+  }
+
   @media (min-width: $desktop-width) {
     margin-top: auto;
   }
@@ -34,6 +38,11 @@
   grid-template-columns: 1fr 1fr;
   gap: 57px;
   margin-bottom: 17px;
+
+  @media (min-width: $tablet-width) {
+    gap: 19px;
+    margin-bottom: -3px;
+  }
 }
 
 .games__title {
@@ -56,13 +65,28 @@
   @media (min-width: $tablet-width) {
     font-size: 18px;
     line-height: 133%;
+    padding-bottom: 1px;
+    margin-bottom: 7px;
+  }
+}
+
+.games__date-time {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 100%;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -6px;
   }
 }
 
 .games__date-info {
-  display: flex;
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  grid-template-rows: 1fr 1fr;
   align-items: center;
-  gap: 3px;
+  column-gap: 3px;
   font-weight: 700;
   font-size: 24px;
   line-height: 100%;
@@ -71,6 +95,7 @@
     font-weight: 700;
     font-size: 24px;
     line-height: 100%;
+    grid-row: span 2;
   }
 
   span {
@@ -80,6 +105,9 @@
   }
 
   @media (min-width: $tablet-width) {
+    column-gap: 6px;
+    row-gap: 8px;
+
     span {
       font-size: 14px;
     }
@@ -96,6 +124,7 @@
   @media (min-width: $tablet-width) {
     font-size: 18px;
     line-height: 133%;
+    margin-bottom: 9px;
   }
 
   @media (min-width: $desktop-width) {
@@ -107,6 +136,10 @@
 
 .games__date-item {
   margin-bottom: 4px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 14px;
+  }
 }
 
 .games__image {

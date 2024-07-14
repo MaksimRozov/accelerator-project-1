@@ -1,7 +1,12 @@
 .card-price {
   text-align: center;
   background-color: #ffffff;
-  padding: 50px 42px;
+  padding: 50px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 64px;
+    padding-bottom: 65px;
+  }
 }
 
 .card-price__title {
@@ -13,6 +18,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 24px;
+    margin-bottom: 22px;
   }
 
   @media (min-width: $desktop-width) {
@@ -23,6 +29,10 @@
 .card-price__duration {
   margin: 0;
   margin-bottom: 64px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 82px;
+  }
 }
 
 .card-price__price {
@@ -44,7 +54,12 @@
     display: block;
     width: 24px;
     height: 33px;
-    background-image: url("../../img/ruble.png");
+    background-image: url("../../__spritemap#sprite-ruble-view");
+
+    @media (min-width: $tablet-width) {
+      width: 34px;
+      height: 40px;
+    }
   }
 
   &::before {
@@ -62,9 +77,12 @@
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
+    gap: 14px;
+    margin-bottom: 22px;
 
     &::before {
       font-size: 100px;
+      top: -61px;
     }
   }
 }
@@ -72,4 +90,11 @@
 .card-price__button {
   padding-top: 25px;
   padding-bottom: 25px;
+  width: 206px;
+  box-sizing: border-box;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 250px;
+  }
 }

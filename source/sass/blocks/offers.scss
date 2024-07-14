@@ -5,8 +5,10 @@
   padding-left: 0;
 
   @media (min-width: $tablet-width) {
-    padding-top: 60px;
+    padding-top: 61px;
     padding-bottom: 60px;
+    padding-right: 45px;
+    padding-left: 45px;
   }
 }
 
@@ -14,6 +16,10 @@
   @include main-title;
 
   margin-bottom: 39px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 34px;
+  }
 }
 
 .offers__button {
@@ -31,9 +37,6 @@
 
   @media (min-width: $tablet-width) {
     margin: auto auto 0 0;
-
-    // margin-top: auto;
-    // margin-right: auto;
   }
 }
 
@@ -41,6 +44,10 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: 40px;
+
+  @media (min-width: $tablet-width) {
+    gap: 35px;
+  }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 560px 1fr;
@@ -72,6 +79,7 @@
     text-align: left;
     display: flex;
     flex-direction: column;
+    padding: 40px 10px 40px 25px;
   }
 }
 
@@ -94,13 +102,14 @@
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 21px;
   }
 }
 
 .offers__list {
   @include list-style-none;
 
-  // width: 90%;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr;
@@ -161,6 +170,7 @@
 
     @media (min-width: $tablet-width) {
       font-size: 26px;
+      margin-bottom: 9px;
     }
   }
 
@@ -180,6 +190,9 @@
     text-align: left;
     display: flex;
     flex-direction: column;
+    padding: 20px 20px 23px;
+    width: 270px;
+    min-height: 131px;
   }
 }
 
