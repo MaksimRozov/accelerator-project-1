@@ -6,6 +6,11 @@
     padding-top: 30px;
     padding-bottom: 60px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 100px;
+    padding-bottom: 99px;
+  }
 }
 
 .jury__title {
@@ -24,6 +29,10 @@
 
   @media (min-width: $tablet-width) {
     padding: 0 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
   }
 }
 
@@ -58,6 +67,18 @@
 
     &--prev {
       left: 5px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 49%;
+
+    &--next {
+      right: -55px;
+    }
+
+    &--prev {
+      left: -53px;
     }
   }
 }

@@ -16,6 +16,13 @@
     padding-top: 61px;
     padding-bottom: 61px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 100px;
+    background-position: bottom -6px right -76px;
+    padding-bottom: 101px;
+    background-size: 379px;
+  }
 }
 
 .price__title {
@@ -25,6 +32,10 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 20px;
   }
 }
 
@@ -52,6 +63,7 @@
 
   @media (min-width: $desktop-width) {
     font-size: 20px;
+    padding-bottom: 8px;
   }
 }
 
@@ -77,6 +89,11 @@
     width: 310px;
     margin: 0 auto;
     margin-bottom: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 351px;
+    margin-bottom: 34px;
   }
 }
 

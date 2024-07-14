@@ -7,6 +7,10 @@
     padding-top: 64px;
     padding-bottom: 65px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 65px;
+  }
 }
 
 .card-price__title {
@@ -23,6 +27,7 @@
 
   @media (min-width: $desktop-width) {
     font-size: 26px;
+    margin-bottom: 17px;
   }
 }
 
@@ -32,6 +37,10 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 82px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 77px;
   }
 }
 
@@ -85,6 +94,10 @@
       top: -61px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 17px;
+  }
 }
 
 .card-price__button {
@@ -96,5 +109,9 @@
 
   @media (min-width: $tablet-width) {
     width: 250px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 230px;
   }
 }

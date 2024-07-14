@@ -8,6 +8,13 @@
     column-gap: 30px;
     padding-top: 30px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 55px;
+    padding-right: 72px;
+    grid-template-columns: 1fr 500px;
+    gap: 57px;
+  }
 }
 
 .hero__image {
@@ -30,6 +37,13 @@
     margin-bottom: 56px;
     margin-right: 3px;
   }
+
+  @media (min-width: $desktop-width) {
+    align-self: center;
+    margin-bottom: 0;
+    grid-row: 1;
+    margin-top: 107px;
+  }
 }
 
 .hero__title-info {
@@ -47,6 +61,7 @@
 
   @media (min-width: $desktop-width) {
     font-size: 54px;
+    margin-bottom: 41px;
   }
 }
 
@@ -80,6 +95,7 @@
     font-size: 92px;
     line-height: 120%;
     letter-spacing: 0.04em;
+    margin-right: 0;
   }
 }
 
@@ -93,6 +109,12 @@
     padding-top: 32px;
     row-gap: 19px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 52px;
+    column-gap: 3px;
+    grid-template-rows: min-content 1fr;
+  }
 }
 
 .hero__button {
@@ -102,6 +124,13 @@
     grid-column: 2;
     align-self: start;
     margin-left: -1px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 19px;
+    margin-right: 0;
+    margin-left: -5px;
+    min-height: 62px;
   }
 }
 
