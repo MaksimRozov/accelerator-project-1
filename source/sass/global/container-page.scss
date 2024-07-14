@@ -6,6 +6,16 @@
   margin-left: auto;
   box-sizing: border-box;
 
+  &--padding-null {
+    padding-right: 0;
+    padding-left: 0;
+
+    @media (min-width: $tablet-width) {
+      padding-right: revert;
+      padding-left: revert;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     max-width: 768px;
     padding-left: 45px;

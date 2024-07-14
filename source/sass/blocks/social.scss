@@ -4,6 +4,10 @@
   display: grid;
   grid-template-columns: repeat(3, max-content);
   gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    gap: 16px;
+  }
 }
 
 .social__link {

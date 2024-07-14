@@ -622,25 +622,28 @@
         </button>
       </div>
     </section>
-    <section class="form container-page" data-test="form">
+    <section class="form" data-test="form">
+
       <div class="form__content">
-        <h2 class="visually-hidden">Форма обратной связи</h2>
-        <div class="form__title">Бесплатное занятие</div>
-        <form action="https://echo.htmlacademy.ru/" method="post">
-          <div class="form__group-input">
-            <div class="form__item">
-              <label class="visually-hidden" for="name">Имя</label>
-              <input class="form__input" type="text" name="name" id="name" placeholder="Имя">
+        <div class="container-page container-page--padding-null">
+          <h2 class="visually-hidden">Форма обратной связи</h2>
+          <div class="form__title">Бесплатное занятие</div>
+          <form action="https://echo.htmlacademy.ru/" method="post">
+            <div class="form__group-input">
+              <div class="form__item">
+                <label class="visually-hidden" for="name">Имя</label>
+                <input class="form__input" type="text" name="name" id="name" placeholder="Имя">
+              </div>
+              <div class="form__item">
+                <label class="visually-hidden" for="telephone">Имя</label>
+                <input class="form__input" type="text" name="telephone" id="telephone" placeholder="Телефон">
+              </div>
             </div>
-            <div class="form__item">
-              <label class="visually-hidden" for="telephone">Имя</label>
-              <input class="form__input" type="text" name="telephone" id="telephone" placeholder="Телефон">
-            </div>
-          </div>
-          <button class="form__button button button--second" type="submit">отправить</button>
-        </form>
+            <button class="form__button button button--second" type="submit">отправить</button>
+          </form>
+        </div>
       </div>
-      <div class="contacts">
+      <div class="contacts container-page--padding-null">
         <h2 class="contacts__title">Контакты</h2>
         <address class="contacts__content">
           <div class="contacts__item">

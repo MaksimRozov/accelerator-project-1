@@ -5,8 +5,8 @@
   padding-left: 15px;
 
   @media (min-width: $tablet-width) {
-    padding-left: 103px;
-    padding-right: 103px;
+    padding-top: 60px;
+    padding-bottom: 56px;
   }
 }
 
@@ -22,6 +22,7 @@
     width: 440px;
     margin: 0 auto;
     position: relative;
+    row-gap: 11px;
 
     &::after {
       content: "";
@@ -44,6 +45,10 @@
 
   text-align: left;
   margin-bottom: 38px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 36px;
+  }
 }
 
 .contacts .contacts__title {
@@ -84,6 +89,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 24px;
+    margin-bottom: 7px;
   }
 }
 
