@@ -6,6 +6,10 @@
 
 .reviews {
   padding-top: 41px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 60px;
+  }
 }
 
 .reviews__slider {
@@ -17,6 +21,7 @@
 .reviews .reviews__title {
   @media (min-width: $tablet-width) {
     font-size: 54px;
+    margin-bottom: 35px;
   }
 }
 
@@ -44,6 +49,7 @@
 
   @media (min-width: $tablet-width) {
     display: block;
+    top: 43%;
 
     &--next {
       right: 0;
