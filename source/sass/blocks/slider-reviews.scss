@@ -62,13 +62,24 @@
     column-gap: 40px;
     width: 500px;
     text-align: left;
-    padding-top: 40px;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-bottom: 38px;
+    padding: 40px 30px 38px;
 
     br:first-child {
       display: block;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 62px 63px 58px 60px;
+    width: 560px;
+    column-gap: 30px;
+
+    br:first-child {
+      display: none;
+    }
+
+    br:last-child {
+      display: none;
     }
   }
 }

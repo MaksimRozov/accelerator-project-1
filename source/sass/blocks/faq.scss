@@ -7,6 +7,11 @@
     padding-top: 61px;
     padding-bottom: 55px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 100px;
+    padding-bottom: 98px;
+  }
 }
 
 .faq__content {
@@ -24,6 +29,11 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 44px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+    margin-bottom: 50px;
   }
 }
 
