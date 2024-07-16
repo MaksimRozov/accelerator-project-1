@@ -89,6 +89,10 @@
       font-weight: 400;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    height: 33px;
+  }
 }
 
 .form__button {
@@ -100,7 +104,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 3.4px;
+    margin-top: 2.4px;
     padding-top: 3px;
     min-height: 66.2px;
   }
