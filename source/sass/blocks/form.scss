@@ -7,12 +7,17 @@
       width: 440px;
       margin: 0 auto;
     }
+
+    @media (min-width: $desktop-width) {
+      width: 100%;
+    }
   }
 
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    border-top: 1px solid #74819c;
+
+    // border-top: 1px solid #74819c;
   }
 }
 
@@ -20,8 +25,6 @@
   background-color: $main-color;
   padding-top: 71px;
   padding-bottom: 70px;
-  padding-left: 15px;
-  padding-right: 15px;
   color: #ffffff;
 
   @media (min-width: $tablet-width) {
@@ -42,6 +45,10 @@
     font-size: 54px;
     text-align: center;
   }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
 }
 
 .form__group-input {
@@ -54,6 +61,10 @@
 .form__item {
   @media (min-width: $tablet-width) {
     width: 205px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 223px;
   }
 }
 
@@ -86,5 +97,11 @@
 
   @media (min-width: $tablet-width) {
     min-height: 66px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 3.4px;
+    padding-top: 3px;
+    min-height: 66.2px;
   }
 }

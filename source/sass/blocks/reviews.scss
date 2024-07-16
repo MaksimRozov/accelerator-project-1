@@ -13,16 +13,18 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 99px;
+    padding-bottom: 62px;
   }
 }
 
 .reviews__slider {
   margin: 0 auto;
+
   padding-bottom: 40px;
   position: relative;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 59px;
+    padding-bottom: 36px;
   }
 }
 
@@ -61,7 +63,7 @@
 
   @media (min-width: $tablet-width) {
     display: block;
-    top: 43%;
+    top: 40%;
 
     &--next {
       right: 0;
@@ -69,6 +71,18 @@
 
     &--prev {
       left: 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 40%;
+
+    &--next {
+      right: 195px;
+    }
+
+    &--prev {
+      left: 195px;
     }
   }
 }

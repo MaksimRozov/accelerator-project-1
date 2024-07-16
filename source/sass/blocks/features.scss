@@ -91,3 +91,27 @@
     }
   }
 }
+
+.features__three .features__item-content {
+  @media (min-width: $desktop-width) {
+    h3 {
+      margin-left: -1px;
+    }
+
+    p {
+      margin-left: -1px;
+    }
+  }
+}
+
+.features__one .features__item-content {
+  @media (min-width: $desktop-width) {
+    h3 {
+      margin-left: -1px;
+    }
+
+    p {
+      margin-left: -1px;
+    }
+  }
+}

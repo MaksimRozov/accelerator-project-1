@@ -1,12 +1,14 @@
 .contacts {
   padding-top: 37px;
   padding-bottom: 37px;
-  padding-right: 15px;
-  padding-left: 15px;
 
   @media (min-width: $tablet-width) {
     padding-top: 60px;
     padding-bottom: 56px;
+  }
+
+  @media (min-width: $desktop-width) {
+    border-top: 1px solid #74819c;
   }
 }
 
@@ -37,6 +39,9 @@
 
   @media (min-width: $desktop-width) {
     margin: 0;
+    column-gap: 120px;
+    width: 477px;
+    row-gap: 13px;
   }
 }
 
@@ -90,6 +95,16 @@
   @media (min-width: $tablet-width) {
     font-size: 24px;
     margin-bottom: 7px;
+  }
+
+  @media (min-width: $desktop-width) {
+    &--tel {
+      margin-bottom: 4px;
+    }
+
+    &--email {
+      margin-bottom: 5px;
+    }
   }
 }
 
