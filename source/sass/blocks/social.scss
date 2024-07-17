@@ -8,6 +8,11 @@
   @media (min-width: $tablet-width) {
     gap: 16px;
   }
+
+  @media (min-width: $desktop-width) {
+    gap: 10px;
+    margin-left: 168px;
+  }
 }
 
 .social__link {
@@ -18,4 +23,27 @@
   height: 25px;
   background-color: #ffffff;
   border-radius: 50%;
+}
+
+.social__link--vk {
+  svg {
+    margin-top: 2px;
+    width: 20px;
+    height: 15px;
+  }
+}
+
+.social__link--ok {
+  svg {
+    width: 14px;
+    height: 17px;
+    margin-left: 1px;
+  }
+}
+
+.social__link--reddit {
+  svg {
+    width: 15px;
+    height: 16px;
+  }
 }

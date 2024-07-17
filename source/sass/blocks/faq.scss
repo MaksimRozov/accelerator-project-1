@@ -10,7 +10,7 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 100px;
-    padding-bottom: 98px;
+    padding-bottom: 95px;
   }
 }
 
@@ -33,7 +33,7 @@
 
   @media (min-width: $desktop-width) {
     text-align: left;
-    margin-bottom: 50px;
+    margin-bottom: 47px;
   }
 }
 
@@ -53,6 +53,7 @@
     flex-direction: column;
 
     margin-bottom: 0;
+    margin-top: 2px;
   }
 }
 
@@ -81,5 +82,7 @@
 
   @media (min-width: $desktop-width) {
     min-height: 54px;
+    padding-top: 19px;
+    padding-bottom: 15px;
   }
 }

@@ -42,6 +42,7 @@
 
     @media (min-width: $desktop-width) {
       padding-right: 200px;
+      line-height: 133%;
     }
   }
 
@@ -92,8 +93,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 23px;
-    padding-bottom: 24px;
+    padding-top: 25px;
+    padding-bottom: 23px;
   }
 }
 
@@ -105,6 +106,7 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 20.2px;
+    padding-bottom: 22.5px;
   }
 }
 
