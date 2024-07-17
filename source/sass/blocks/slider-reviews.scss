@@ -67,6 +67,10 @@
     br:first-child {
       display: block;
     }
+
+    br:nth-child(2) {
+      display: none;
+    }
   }
 
   @media (min-width: $desktop-width) {
