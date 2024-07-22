@@ -54,6 +54,53 @@
   line-height: 143%;
   color: #ffffff;
   text-decoration: none;
+  border: 1px solid transparent;
+  position: relative;
+  padding: 10px;
+
+  &:hover:not(:disabled):not(.main-footer__menu-link--disabled):not(:focus-visible):not(:active) {
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      left: 10px;
+      right: 10px;
+      bottom: 5px;
+      height: 1px;
+      background-color: currentColor;
+    }
+  }
+
+  &:focus:not(.main-footer__menu-link--disabled):not(:active) {
+    opacity: 1;
+    outline: none;
+    background-color: transparent;
+    border: 1px solid currentColor;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:active {
+    opacity: 1;
+    border: 1px solid transparent;
+  }
+
+  &--disabled {
+    opacity: 0.3;
+    pointer-events: none;
+
+    &:focus {
+      opacity: 0.5;
+      pointer-events: none;
+      border: none;
+    }
+  }
 
   @media (min-width: $desktop-width) {
     font-weight: 400;

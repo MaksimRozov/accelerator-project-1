@@ -2,6 +2,8 @@
   text-align: center;
   background-color: #ffffff;
   padding: 50px 20px;
+  border: 7px solid transparent;
+  box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
     padding-top: 64px;
@@ -114,4 +116,11 @@
   @media (min-width: $desktop-width) {
     width: 230px;
   }
+}
+
+.card-price:has(.card-price__button:hover) {
+  border: 7px solid transparent;
+  border-image: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
+  border-image-slice: 7;
+  transition: all 0.3;
 }

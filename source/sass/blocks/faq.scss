@@ -75,6 +75,27 @@
     color: #ffffff;
   }
 
+  &:hover:not(:disabled):not(.button-more--disabled):not(:focus-visible):not(:active) {
+    border: 1px solid #102654;
+  }
+
+  &:focus:not(:disabled):not(.button-more--disabled):not(:active) {
+    outline: none;
+    border: 1px solid #102654;
+  }
+
+  &:active {
+    outline: none;
+    background: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
+    color: #ffffff;
+  }
+
+  &:disabled {
+    color: #c8c9cc;
+    border: 1px solid rgba(16, 38, 84, 0.2);
+    pointer-events: none;
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 18px;
     padding: 17px 22px;

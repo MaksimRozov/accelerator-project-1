@@ -23,6 +23,32 @@
   height: 25px;
   background-color: #ffffff;
   border-radius: 50%;
+
+  &:hover:not(:disabled):not(.social__link--disabled):not(:focus-visible):not(:active) {
+    background-color: #74819c;
+    fill: #ffffff;
+  }
+
+  &:focus:not(:disabled):not(.social__link--disabled) {
+    background-color: #103aae;
+    fill: #ffffff;
+  }
+
+  &:active {
+    background-color: #102654;
+    fill: #ffffff;
+  }
+
+  &:disabled {
+    background-color: #cccfd6;
+    fill: #030a1a;
+  }
+
+  &--disabled {
+    background-color: #cccfd6;
+    fill: #030a1a;
+    pointer-events: none;
+  }
 }
 
 .social__link--vk {

@@ -8,17 +8,57 @@
   display: block;
   text-decoration: none;
   background-color: transparent;
+  cursor: pointer;
 
   &--main {
     border: 2px solid $main-color;
     padding: 22px 10px;
     color: #102654;
+
+    &:hover:not(:disabled):not(.button--disabled):not(:focus-visible):not(:active) {
+      background-image: $fill-gradient;
+      color: #ffffff;
+      border: 2px solid #ffffff;
+    }
+
+    &:active {
+      background-image: $fill-gradient;
+      color: $color-opacity;
+
+      border: 2px solid #ffffff;
+    }
+
+    &:focus {
+      background-image: $fill-gradient-focus;
+      color: #ffffff;
+    }
+
+    &:disabled {
+      color: rgba($color-white, 0.5);
+      border-color: rgba($color-white, 0.5);
+      pointer-events: none;
+    }
   }
 
   &--second {
     border: 2px solid #ffffff;
     padding: 22px 10px;
     color: #ffffff;
+
+    &:hover:not(:disabled):not(.button--disabled):not(:focus-visible):not(:active) {
+      color: #103aae;
+      background-color: #ffffff;
+    }
+
+    &:focus {
+      color: #103aae;
+      background-color: $color-opacity;
+    }
+
+    &:active {
+      color: #102654;
+      background-color: #ffffff;
+    }
 
     @media (min-width: $tablet-width) {
       height: 52px;
@@ -27,5 +67,31 @@
       align-items: center;
       justify-content: center;
     }
+  }
+}
+
+.button--main.button--disabled {
+  opacity: 0.3;
+  pointer-events: none;
+
+  &:focus {
+    opacity: 0.3;
+    pointer-events: none;
+    border: 2px solid $main-color;
+    color: #102654;
+    background-color: transparent;
+    background-image: none;
+  }
+}
+
+.button--second.button--disabled {
+  opacity: 0.3;
+  pointer-events: none;
+
+  &:focus {
+    opacity: 0.5;
+    pointer-events: none;
+    color: #ffffff;
+    background-color: transparent;
   }
 }

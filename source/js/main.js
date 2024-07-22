@@ -7,6 +7,7 @@ import { sliderJuryInit } from './modules/sliders/slider-jury';
 import { sliderReviewsInit } from './modules/sliders/slider-reviews';
 import { tabsInit } from './modules/tabs';
 import { accordionInit } from './modules/accordion';
+import { validateForm } from './modules/form';
 
 // Функция для загрузки iframe с видео
 function loadVideo() {
@@ -26,5 +27,6 @@ window.addEventListener('DOMContentLoaded', () => {
     sliderReviewsInit();
     tabsInit();
     accordionInit();
+    validateForm();
   });
 });
