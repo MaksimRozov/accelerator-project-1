@@ -52,13 +52,15 @@
   padding: 0;
   padding-bottom: 6px;
   cursor: pointer;
+  width: 86px;
+  text-align: left;
 
   &:hover:not(:disabled):not(.price__button--disabled):not(:focus-visible):not(:active) {
     color: rgba(16, 38, 84, 0.7);
     border-bottom: 2px solid currentColor;
   }
 
-  &:focus {
+  &:focus:not(.price__button--active) {
     outline: none;
     color: #102654;
     border-bottom: 2px solid currentColor;

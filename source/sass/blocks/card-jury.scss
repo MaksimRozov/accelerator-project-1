@@ -7,6 +7,8 @@
 }
 
 .card-jury__title {
+  padding-left: 10px;
+  padding-right: 10px;
   position: absolute;
   font-size: 22px;
   line-height: 100%;
@@ -57,7 +59,8 @@
   line-height: 157%;
 }
 
-.card-jury:hover .card-jury__information {
+.card-jury:hover .card-jury__information,
+.card-jury:focus .card-jury__information {
   opacity: 1;
   transition: 0.3s;
 }

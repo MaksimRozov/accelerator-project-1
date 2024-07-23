@@ -4,6 +4,7 @@
   display: grid;
   grid-template-columns: repeat(3, max-content);
   gap: 20px;
+  margin-top: -2px;
 
   @media (min-width: $tablet-width) {
     gap: 16px;
@@ -29,13 +30,13 @@
     fill: #ffffff;
   }
 
-  &:focus:not(:disabled):not(.social__link--disabled) {
-    background-color: #103aae;
+  &:active {
+    background-color: #102654;
     fill: #ffffff;
   }
 
-  &:active {
-    background-color: #102654;
+  &:focus:not(:disabled):not(.social__link--disabled):not(:active) {
+    background-color: #103aae;
     fill: #ffffff;
   }
 

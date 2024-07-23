@@ -8,17 +8,7 @@ import { sliderReviewsInit } from './modules/sliders/slider-reviews';
 import { tabsInit } from './modules/tabs';
 import { accordionInit } from './modules/accordion';
 import { validateForm } from './modules/form';
-
-// Функция для загрузки iframe с видео
-function loadVideo() {
-  const videoContainer = document.querySelector('.about__video');
-  videoContainer.innerHTML = '<iframe width="360" height="230" src="https://www.youtube.com/embed/9TZXsZItgdw?si=MO3SEu-LfrbBN-_P" loading="lazy"  frameborder="0" allowfullscreen></iframe>';
-}
-
-// Добавляем обработчик события на кнопку "Play Video"
-document.querySelector('.about__video-button').addEventListener('click', () => {
-  loadVideo(); // Вызываем функцию загрузки видео
-});
+import { playVideo } from './modules/play-video';
 
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -28,5 +18,6 @@ window.addEventListener('DOMContentLoaded', () => {
     tabsInit();
     accordionInit();
     validateForm();
+    playVideo();
   });
 });

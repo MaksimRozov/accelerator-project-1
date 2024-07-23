@@ -1,54 +1,46 @@
 const lettersOnlyRegex = /^[a-zA-Zа-яА-ЯёЁ\s]+$/;
 const digitsOnlyRegex = /^\d+$/;
 
-const showError = (input, errorMessage) => {
+const showErrorMessage = (input, errorMessage) => {
   const parent = input.parentElement;
   const errorText = parent.querySelector('.form__error-text');
-
-  // parent.classList.add('form__input--error');
   input.classList.add('form__input--error');
-
   errorText.textContent = errorMessage;
   errorText.style.display = 'block';
 };
 
-const hideError = (input) => {
-
+const hideErrorMessage = (input) => {
   const parent = input.parentElement;
   const errorText = parent.querySelector('.form__error-text');
-
-  // parent.classList.remove('form__input--error');
   input.classList.remove('form__input--error');
-
   errorText.textContent = '';
   errorText.style.display = 'none';
 };
 
-
-const validatePhone = (input) => {
+const validatePhoneInput = (input) => {
   const value = input.value.trim();
 
   if (value === '') {
-    showError(input, 'Поле обязательно для заполнения');
+    showErrorMessage(input, 'Поле обязательно для заполнения');
   } else if (!digitsOnlyRegex.test(value)) {
-    showError(input, 'Поле должно содержать только цифры');
+    showErrorMessage(input, 'Поле должно содержать только цифры');
   } else {
-    hideError(input);
+    hideErrorMessage(input);
   }
 };
 
-
-const validateName = (input) => {
+const validateNameInput = (input) => {
   const value = input.value.trim();
 
   if (value === '') {
-    showError(input, 'Поле обязательно для заполнения');
+    showErrorMessage(input, 'Поле обязательно для заполнения');
   } else if (!lettersOnlyRegex.test(value)) {
-    showError(input, 'Поле может содержать только буквы и пробелы');
+    showErrorMessage(input, 'Поле может содержать только буквы и пробелы');
   } else {
-    hideError(input);
+    hideErrorMessage(input);
   }
 };
+
 
 const validateForm = () => {
   const formContentElement = document.querySelector('.form__content');
@@ -61,9 +53,9 @@ const validateForm = () => {
 
       itemsInputElement.forEach((input) => {
         if (input.name === 'name') {
-          validateName(input);
+          validateNameInput(input);
         } else if (input.name === 'telephone') {
-          validatePhone(input);
+          validatePhoneInput(input);
         }
       });
 
@@ -75,22 +67,19 @@ const validateForm = () => {
       }
     });
 
+    itemsInputElement.forEach((input) => {
+      input.addEventListener('blur', () => {
+        if (input.value.trim() === '') {
+          hideErrorMessage(input);
+          input.classList.remove('form__input--error');
+        }
+      });
+      input.addEventListener('input', () => {
+        hideErrorMessage(input);
+        input.classList.remove('form__input--error');
+      });
+    });
 
-    // itemsInputElement.forEach((input) => {
-    //   input.addEventListener('blur', () => {
-    //     if (input.value.trim() === '') {
-    //       // input.parentElement.classList.remove('form__input--error');
-    //       input.classList.remove('form__input--error');
-    //     }
-    //   });
-
-    //   input.addEventListener('input', () => {
-    //     if (input.value.trim() === '') {
-    //       // input.parentElement.classList.remove('form__input--error');
-    //       input.classList.remove('form__input--error');
-    //     }
-    //   });
-    // });
   }
 };
 

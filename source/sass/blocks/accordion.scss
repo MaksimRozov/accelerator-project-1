@@ -190,6 +190,29 @@
     width: 14px;
     height: 2px;
   }
+
+  &:hover:not(:disabled):not(:focus-visible):not(:active) {
+    background-color: #1c3374;
+
+    &::after {
+      background-color: #ffffff;
+    }
+  }
+
+  &:focus {
+    outline: none;
+    background-color: #74819c;
+    border: 1px solid #1c3374;
+
+    &::after {
+      background-color: #ffffff;
+    }
+  }
+
+  &:disabled {
+    opacity: 0.3;
+    pointer-events: none;
+  }
 }
 
 .accordion__content {

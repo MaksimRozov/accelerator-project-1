@@ -9,6 +9,8 @@
   text-decoration: none;
   background-color: transparent;
   cursor: pointer;
+  padding-right: 10px;
+  padding-left: 10px;
 
   &--main {
     border: 2px solid $main-color;
@@ -21,16 +23,16 @@
       border: 2px solid #ffffff;
     }
 
+    &:focus {
+      outline: none;
+      background-image: $fill-gradient-focus;
+      color: #ffffff;
+    }
+
     &:active {
       background-image: $fill-gradient;
       color: $color-opacity;
-
       border: 2px solid #ffffff;
-    }
-
-    &:focus {
-      background-image: $fill-gradient-focus;
-      color: #ffffff;
     }
 
     &:disabled {
@@ -63,7 +65,8 @@
     @media (min-width: $tablet-width) {
       height: 52px;
       display: flex;
-      padding: 0;
+      padding: 0 10px;
+
       align-items: center;
       justify-content: center;
     }

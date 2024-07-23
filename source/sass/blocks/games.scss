@@ -14,7 +14,8 @@
 .games__content {
   color: #ffffff;
   background-color: #ed0233;
-  padding: 40px;
+
+  // padding: 40px;
 
   @media (min-width: $desktop-width) {
     padding: 60px 80px 98px;
@@ -24,6 +25,8 @@
 }
 
 .games__button {
+  margin-bottom: 5px;
+
   @media (min-width: $tablet-width) {
     min-height: 62px;
   }
@@ -115,6 +118,9 @@
     font-size: 24px;
     line-height: 100%;
     grid-row: span 2;
+    max-width: 41px;
+    display: block;
+    overflow-wrap: break-word;
   }
 
   span {
