@@ -52,7 +52,7 @@
   padding: 0;
   padding-bottom: 6px;
   cursor: pointer;
-  width: 86px;
+  width: fit-content;
   text-align: left;
 
   &:hover:not(:disabled):not(.price__button--disabled):not(:focus-visible):not(:active) {
