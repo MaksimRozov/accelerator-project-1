@@ -38,6 +38,11 @@
     padding-top: 60px;
     padding-bottom: 60px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 60px;
+    padding-bottom: 58px;
+  }
 }
 
 .form__title {
