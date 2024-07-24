@@ -84,7 +84,7 @@
   border: none;
   border-bottom: 1px solid #74819c;
   height: 31px;
-  padding-left: 5px;
+  padding-left: 0;
   color: #ffffff;
 
   &--error {
@@ -138,7 +138,7 @@
 
 .form__button {
   width: 100%;
-  margin-top: 4px;
+  margin-top: 36px;
 
   @media (min-width: $tablet-width) {
     min-height: 66px;
