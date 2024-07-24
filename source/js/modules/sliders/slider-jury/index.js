@@ -9,7 +9,7 @@ const sliderJuryInit = () => {
     const swiper = new Swiper(swiperJury, {
       modules: [Navigation],
       grabCursor: false,
-      watchOverflow: false,
+      watchOverflow: true,
       speed: 1000,
       loop: true,
       navigation: {

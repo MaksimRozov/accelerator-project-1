@@ -4,10 +4,8 @@
 
 .accordion__item {
   border-bottom: 1px solid #74819c;
-
-  &:first-child {
-    border-top: 1px solid #74819c;
-  }
+  padding-top: 20px;
+  padding-bottom: 20px;
 
   h3 {
     font-weight: 400;
@@ -31,27 +29,33 @@
     font-size: 16px;
     line-height: 125%;
     color: #102654;
-    padding-bottom: 20px;
-    padding-right: 36px;
+    max-width: 238px;
+    margin-top: 20px;
 
     @media (min-width: $tablet-width) {
       padding-right: 122px;
       line-height: 133%;
       font-size: 18px;
+      max-width: 560px;
+      margin-top: 10px;
     }
 
     @media (min-width: $desktop-width) {
       padding-right: 200px;
       line-height: 133%;
+      max-width: 620px;
+      margin-top: 23px;
     }
   }
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 5px;
+    padding-top: 25px;
+    padding-bottom: 22px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 4px;
+    padding-top: 25px;
+    padding-bottom: 21px;
   }
 }
 
@@ -69,51 +73,12 @@
   gap: 22px;
   align-items: center;
   justify-content: space-between;
-  padding-top: 20px;
-  padding-bottom: 20px;
   background-repeat: no-repeat;
   background-position: center right;
   background-size: 30px;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 40px;
-    padding-top: 25.1px;
-    padding-bottom: 12px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-bottom: 24px;
-  }
-}
-
-.accordion__item:first-child .accordion__header {
-  @media (min-width: $tablet-width) {
-    padding-top: 24px;
-    padding-bottom: 11px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-top: 25px;
-    padding-bottom: 23px;
-  }
-}
-
-.accordion__item:not(:first-child) .accordion__header {
-  @media (min-width: $tablet-width) {
-    padding-top: 21.2px;
-    padding-bottom: 21.5px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-top: 20.2px;
-    padding-bottom: 22.5px;
-  }
-}
-
-.accordion__item:nth-child(3) .accordion__header {
-  @media (min-width: $tablet-width) {
-    padding-top: 20.5px;
-    padding-bottom: 21.3px;
   }
 }
 
