@@ -37,6 +37,8 @@
 }
 
 .jury__button {
+  top: 50%;
+
   &--next {
     right: -36px;
   }
@@ -47,11 +49,11 @@
 
   @media (min-width: $tablet-width) {
     &--next {
-      right: 6px;
+      right: -11px;
     }
 
     &--prev {
-      left: 5px;
+      left: -12px;
     }
   }
 
