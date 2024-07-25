@@ -1,7 +1,7 @@
 .card-jury {
   position: relative;
   width: 260px;
-  height: 300px;
+  max-height: 300px;
   margin: 0 auto;
   cursor: pointer;
 }
@@ -17,6 +17,11 @@
   bottom: 2px;
   left: 0;
   right: 0;
+}
+
+.card-jury__image {
+  width: 260px;
+  margin: 0 auto;
 }
 
 .card-jury__information {
@@ -69,6 +74,7 @@
   box-shadow: 0 0 35px 0 rgba(42, 59, 99, 0.17);
 }
 
-.card-jury:hover .card-jury__title {
+.card-jury:hover .card-jury__title,
+.card-jury:focus .card-jury__title {
   display: none;
 }

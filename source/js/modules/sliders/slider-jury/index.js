@@ -20,12 +20,12 @@ const sliderJuryInit = () => {
       breakpoints: {
         320: {
           slidesPerView: 1,
-          activeIndex: 1,
+          activeIndex: 0,
         },
 
         768: {
           slidesPerView: 2,
-          spaceBetween: 10,
+          spaceBetween: 40,
           simulateTouch: false,
 
         },
