@@ -1,5 +1,5 @@
-import Swiper from 'swiper';
-import { Navigation } from 'swiper/modules';
+import { Swiper } from '../../../vendor/swiper/swiper.min.js';
+import { Navigation } from '../../../vendor/swiper/modules';
 
 const reviewsSlider = document.querySelector('.reviews__slider');
 

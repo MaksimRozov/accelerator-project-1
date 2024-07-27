@@ -3,6 +3,7 @@
 // import {Navigation, Pagination} from "swiper/modules";
 // import 'swiper/css';
 
+
 import { sliderJuryInit } from './modules/sliders/slider-jury';
 import { sliderReviewsInit } from './modules/sliders/slider-reviews';
 import { tabsInit } from './modules/tabs';
