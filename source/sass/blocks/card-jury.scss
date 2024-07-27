@@ -70,7 +70,8 @@
   transition: 0.3s;
 }
 
-.card-jury:hover {
+.card-jury:hover,
+.card-jury:focus {
   box-shadow: 0 0 35px 0 rgba(42, 59, 99, 0.17);
 }
 

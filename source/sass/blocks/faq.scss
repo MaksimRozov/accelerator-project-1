@@ -79,11 +79,11 @@
     color: #ffffff;
   }
 
-  &:hover:not(:disabled):not(.button-more--disabled):not(:focus-visible):not(:active) {
+  &:hover:not(:disabled):not(.faq__button--disabled):not(:focus-visible):not(:active) {
     border: 1px solid #102654;
   }
 
-  &:focus:not(:disabled):not(.button-more--disabled):not(:active) {
+  &:focus:not(:disabled):not(.faq__button--disabled):not(:active) {
     outline: none;
     border: 1px solid #102654;
   }

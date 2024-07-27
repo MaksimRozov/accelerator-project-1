@@ -64,6 +64,7 @@
   &::after {
     content: "";
     display: block;
+    flex: 0 0 auto;
     width: 24px;
     height: 32px;
     background-image: url("../../__spritemap#sprite-ruble-view");
@@ -120,16 +121,9 @@
   }
 }
 
-.card-price:has(.card-price__button:hover) {
+.card-price:has(.card-price__button:hover, .card-price__button:focus) {
   border: 7px solid transparent;
-  border-image: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
-  border-image-slice: 7;
-  transition: all 0.3;
-}
-
-.card-price:has(.card-price__button:focus) {
-  border: 7px solid transparent;
-  border-image: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
-  border-image-slice: 7;
-  transition: all 0.3;
+  border-image: linear-gradient(151deg, #ed0233, #003eb7);
+  border-image-slice: 1;
+  transition: border-color 0.3s;
 }

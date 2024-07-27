@@ -45,6 +45,7 @@
 
 .about__image-content {
   position: relative;
+  align-self: start;
 }
 
 .about__title {
@@ -145,7 +146,7 @@
   @media (min-width: $desktop-width) {
     width: 360px;
     height: 230px;
-    bottom: -108px;
+    bottom: -120px;
     left: 12%;
   }
 }

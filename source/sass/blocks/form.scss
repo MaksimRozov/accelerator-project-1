@@ -23,8 +23,6 @@
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-
-    // border-top: 1px solid #74819c;
   }
 }
 
@@ -156,9 +154,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 2.4px;
+    margin-top: 2px;
     padding-top: 3px;
-    min-height: 66.2px;
+    min-height: 66px;
   }
 }
 

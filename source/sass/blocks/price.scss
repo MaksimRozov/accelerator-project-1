@@ -74,6 +74,7 @@
   &--active {
     border-bottom: 2px solid #d10a42;
     color: $main-color;
+    outline: none;
   }
 
   &:disabled {

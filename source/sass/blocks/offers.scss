@@ -20,8 +20,10 @@
 }
 
 .offers__image {
-  // height: 100%;
-  object-fit: cover;
+  @media (min-width: $tablet-width) {
+    height: 100%;
+    object-fit: cover;
+  }
 }
 
 .offers__title {
@@ -111,6 +113,8 @@
   margin-top: 4px;
   margin-bottom: 28px;
   width: 260px;
+  margin-left: auto;
+  margin-right: auto;
   overflow-wrap: break-word;
 
   span {

@@ -1,9 +1,3 @@
-.reviews__title {
-  @include main-title;
-
-  margin-bottom: 39px;
-}
-
 .reviews {
   padding-top: 41px;
 
@@ -15,6 +9,12 @@
     padding-top: 100px;
     padding-bottom: 41px;
   }
+}
+
+.reviews__title {
+  @include main-title;
+
+  margin-bottom: 39px;
 }
 
 .reviews__slider-container {
