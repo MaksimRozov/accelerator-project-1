@@ -15,7 +15,6 @@ const tabsInit = () => {
         }
       });
 
-      // Обработчик события клика для вкладок
       buttonElements.forEach((tabButton, index) => {
         tabButton.setAttribute('data-tab', index);
         const classButtonElement = tabButton.classList[0];
@@ -25,17 +24,14 @@ const tabsInit = () => {
           e.preventDefault();
           const activeTabId = e.target.getAttribute('data-tab');
 
-          // Убираем активный класс у всех вкладок, кроме текущей
           buttonElements.forEach((item) => {
             if (tabButton !== item) {
               item.classList.remove(classButtonModificate);
             }
           });
 
-          // Добавляем активный класс текущей вкладке
           tabButton.classList.add(classButtonModificate);
 
-          // Показываем соответствующее содержимое вкладки
           tabContentElements.forEach((itemContent, indexContent) => {
             itemContent.setAttribute('data-tab-content', indexContent);
             const contentId = itemContent.getAttribute('data-tab-content');
