@@ -1,9 +1,9 @@
 import { validatePhoneInput, validateNameInput, resetError } from './utils';
-import { formContentElement, form, itemsInputElement, ErrorClass } from './variables';
+import { formContentElement, formElement, itemsInputElement, ErrorClass } from './variables';
 
 const validateForm = () => {
   if (formContentElement) {
-    form.addEventListener('submit', (event) => {
+    formElement.addEventListener('submit', (event) => {
       event.preventDefault();
 
       itemsInputElement.forEach((input) => {
@@ -18,7 +18,7 @@ const validateForm = () => {
         (input) => !input.classList.contains(ErrorClass.ERROR_INPUT),
       );
       if (isValid) {
-        form.submit();
+        formElement.submit();
       }
     });
 

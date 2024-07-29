@@ -3,7 +3,7 @@ import { itemsInputElement, lettersOnlyRegex, digitsOnlyRegex, ErrorMassage, Err
 const showErrorMessage = (input, errorMessage) => {
   const parent = input.parentElement;
   const errorText = parent.querySelector('.form__error-text');
-  input.classList.add('form__input--error');
+  input.classList.add(ErrorClass.ERROR_INPUT);
   errorText.textContent = errorMessage;
   errorText.style.display = 'block';
 };
