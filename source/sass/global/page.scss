@@ -15,6 +15,10 @@
   line-height: 157%;
   color: $main-color;
 
+  img {
+    display: block;
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 150%;
